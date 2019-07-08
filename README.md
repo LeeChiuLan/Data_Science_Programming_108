@@ -13,7 +13,9 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 - week 1
   - [hw1.html](http://google.com) testing....
   
-  
+## Week 1
+- Progress:
+    - Before class
 ## Courses
 - week 1
   - 投影片 [資料科學課程簡介](https://docs.google.com/presentation/d/e/2PACX-1vRNotYqGl42khFyyjuiRYQ9cOOwNsBgGXgW-IBoIJDdiG6T2Adw2X-SO4dDGPhKqd7JlEb3ku9Hmn_7/pub?start=false&loop=false&delayms=3000)
