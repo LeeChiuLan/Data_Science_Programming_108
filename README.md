@@ -7,7 +7,7 @@ Data Science Programming in Summer NTU
 學號: G10716001   
 學校: 台北市立大學 資訊科學系 碩二
 <br>
-My Website <a href="http://example.com/" target="_blank">link here!</a>
+My Website <a href="https://leechiulan.github.io" target="_blank">link here!</a>
 
 ## Homework
 - week 1
