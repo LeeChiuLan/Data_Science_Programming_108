@@ -17,3 +17,6 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 ## Courses
 - week 1
   - 投影片 [資料科學課程簡介](https://docs.google.com/presentation/d/e/2PACX-1vRNotYqGl42khFyyjuiRYQ9cOOwNsBgGXgW-IBoIJDdiG6T2Adw2X-SO4dDGPhKqd7JlEb3ku9Hmn_7/pub?start=false&loop=false&delayms=3000)
+  
+## Reference
+- [王姿嵐-Data Science Programming](https://github.com/lanw868/Data-Science-Programming)
