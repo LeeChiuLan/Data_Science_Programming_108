@@ -11,12 +11,13 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 
 ## Homework
 - week 1
-  - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/up_RmarkTest.html) 
-  - [R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/R_test1.html) 
+  - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/up_RmarkTest.html)
   
 ## Week 1
 - Progress:
-    - R learning: [myRR01](https://leechiulan.github.io/Data_Science_Programming_108/week1/myRR01.html) 
+    - R learning: [myRR01](https://leechiulan.github.io/Data_Science_Programming_108/week1/myRR01.html)  
+    - R learning: [R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/R_test1.html) 
+    
 ## Courses
 - week 1
   - 投影片 [資料科學課程簡介](https://docs.google.com/presentation/d/e/2PACX-1vRNotYqGl42khFyyjuiRYQ9cOOwNsBgGXgW-IBoIJDdiG6T2Adw2X-SO4dDGPhKqd7JlEb3ku9Hmn_7/pub?start=false&loop=false&delayms=3000)
