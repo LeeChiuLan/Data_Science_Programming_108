@@ -8,7 +8,7 @@ Data Science Programming in Summer NTU
 學校: 台北市立大學 資訊科學系 碩二
 <br>
 My Website: <a href="https://leechiulan.github.io" target="_blank">https://leechiulan.github.io</a>
-
+[108 全國夏季學院學員 github](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)
 ## Homework
 - week 1
   - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/up_RmarkTest.html)
