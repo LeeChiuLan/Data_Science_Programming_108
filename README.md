@@ -11,7 +11,8 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 
 ## Homework
 - week 1
-  - [hw1](https://leechiulan.github.io/Data_Science_Programming_108/week1/up_RmarkTest.html) 
+  - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/up_RmarkTest.html) 
+  - [R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/R_test1.html) 
   
 ## Week 1
 - Progress:
