@@ -15,8 +15,9 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
   
 ## Week 1
 - Progress:
-    - R learning: [myRR01](https://leechiulan.github.io/Data_Science_Programming_108/week1/myRR01.html)  
-    - R learning: [R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/R_test1.html) 
+    - At home
+        - R learning: ggplot2 [myRR01](https://leechiulan.github.io/Data_Science_Programming_108/week1/myRR01.html)  
+        - R learning: barplot [R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/R_test1.html) 
     
 ## Courses
 - week 1
