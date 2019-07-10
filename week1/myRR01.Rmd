@@ -1,0 +1,12 @@
+---
+title: "myRR01"
+author: "Linda Lee"
+date: "2019/7/10"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+ggplot(data=iris, aes(x=Species, y=Sepal.Length))+geom_point()
+```
+
