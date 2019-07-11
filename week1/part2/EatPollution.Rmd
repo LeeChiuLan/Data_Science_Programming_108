@@ -31,7 +31,7 @@ locationDate <- select(data, Name, Zipcode, Px, Py)
 head(locationDate)
 nrow(locationDate)
 
-EatPollution = rbind(data, sitedata)
+#EatPollution = rbind(data, sitedata)
 ```
 
 
