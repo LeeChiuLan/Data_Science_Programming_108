@@ -196,6 +196,13 @@ $(document).ready(function () {
 </div>
 
 
+<div id="dataset" class="section level2">
+<h2>DataSet</h2>
+<ul>
+<li><a href="https://data.gov.tw/dataset/7779">餐飲 - 觀光資訊資料庫</a></li>
+<li>XML To CSV Converter <a href="http://www.convertcsv.com/xml-to-csv.htm">online</a></li>
+<li><a href="https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&amp;topic2=%E5%A4%A7%E6%B0%A3&amp;subject=%E6%B8%AC%E7%AB%99">空氣品質監測站經緯度</a></li>
+</ul>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: 'dplyr'</code></pre>
@@ -243,6 +250,8 @@ head(locationDate)</code></pre>
 ## 6   拙而奇藝術空間     977 121.5026 23.52237</code></pre>
 <pre class="r"><code>nrow(locationDate)</code></pre>
 <pre><code>## [1] 5022</code></pre>
+<pre class="r"><code>#EatPollution = rbind(data, sitedata)</code></pre>
+</div>
 
 
 
