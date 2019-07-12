@@ -211,6 +211,7 @@ $(document).ready(function () {
 </ul></li>
 <li><a href="https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&amp;topic2=%E5%A4%A7%E6%B0%A3&amp;subject=%E6%B8%AC%E7%AB%99">空氣品質監測站經緯度</a>
 <ul>
+<li>Download .csv</li>
 <li>Rename the field name(column) from Chinese to English</li>
 </ul>
 <table>
@@ -253,21 +254,7 @@ $(document).ready(function () {
 <li>南 1度 110751.075273 M</li>
 <li>北 1度 110765.515243 M</li>
 </ul></li>
-<li>unordered list</li>
-<li>item 2
-<ul>
-<li>sub-item 1</li>
-<li>sub-item 2</li>
-</ul></li>
 </ul>
-<ol style="list-style-type: decimal">
-<li>ordered list</li>
-<li>item 2
-<ul>
-<li>sub-item 1</li>
-<li>sub-item 2</li>
-</ul></li>
-</ol>
 </div>
 <div id="r" class="section level2">
 <h2>R</h2>
@@ -371,7 +358,7 @@ dim(sitedata_raw)</code></pre>
 ## 6  121.5786 25.05000</code></pre>
 </div>
 <div id="site" class="section level3">
-<h3>處理[資料集]Site的欄位</h3>
+<h3>處理[資料集]Site:含欄位</h3>
 <pre class="r"><code>#--------------- [DataSet] Site ---------------
 sitedata &lt;- select(sitedata_raw, Name, Longitude,Latitude)
 sitedata = sitedata[sitedata$Name != &quot;&quot;,]    # remove empty row
@@ -398,7 +385,7 @@ head(sitedata)</code></pre>
 <pre><code>## [1] 77  4</code></pre>
 </div>
 <div id="restaurant" class="section level3">
-<h3>處理[資料集]Restaurant的欄位</h3>
+<h3>處理[資料集]Restaurant:含欄位</h3>
 <pre class="r"><code>#--------------- [DataSet] Restaurant ---------------
 restaurantdata &lt;- select(restaurantdata_raw, Name, Px, Py, Description)
 head(restaurantdata)</code></pre>
@@ -425,6 +412,117 @@ head(restaurantdata)</code></pre>
 data = rbind(restaurantdata, sitedata)
 dim(data)</code></pre>
 <pre><code>## [1] 5099    4</code></pre>
+<pre class="r"><code>library(kableExtra)</code></pre>
+<pre><code>## 
+## Attaching package: 'kableExtra'</code></pre>
+<pre><code>## The following object is masked from 'package:dplyr':
+## 
+##     group_rows</code></pre>
+<pre class="r"><code>kable(head(data))</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:right;">
+Px
+</th>
+<th style="text-align:right;">
+Py
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+龍潭豆花
+</td>
+<td style="text-align:right;">
+121.5341
+</td>
+<td style="text-align:right;">
+25.01392
+</td>
+<td style="text-align:left;">
+龍潭豆花只賣一種東西，也就是現點現做的古早味豆花，讓饕客把味蕾的重點回歸到豆花本身，豆花滑順綿密，比例調配得很好，帶著微微焦香，豆花出自店家自製，有著自己的特色。
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+望海巴耐野菜餐廳
+</td>
+<td style="text-align:right;">
+121.6061
+</td>
+<td style="text-align:right;">
+23.91895
+</td>
+<td style="text-align:left;">
+非常有特色的原住民餐點餐廳，位於台十一線8K區段上，是東海岸行經花蓮大橋進入東海岸國家風景區之後，花蓮遊客中心前，第一家餐飲服務業者；業者於建物外部以當地竹子搭蓋起大門及挑高竹亭，呈顯其自然風格建築形式是其特色。望海巴耐野菜餐廳位於台十一線8K區段上，是東海岸行經花蓮大橋進入東海岸國家風景區之後，花蓮遊客中心前，第一家餐飲服務業者；業者於建物外部以當地竹子搭蓋起大門及挑高竹亭，呈顯其自然風格建築形式是其特色。
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+噶瑪蘭海產店
+</td>
+<td style="text-align:right;">
+121.5378
+</td>
+<td style="text-align:right;">
+23.65318
+</td>
+<td style="text-align:left;">
+沒有固定菜單，菜單依照時節隨時更新，主要客群來自附近居民及固定客戶，業者也和附近民宿配合，接待海天、118、沙漠風情、來去海邊等民宿的住房遊客。主要菜色為海鮮料理及噶瑪蘭風味料理，餐廳本身還有供簡易之餐飲服務，可容納約90~120人，這是一間原住民風格濃厚的餐廳。
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+昕陽餐廳
+</td>
+<td style="text-align:right;">
+121.5059
+</td>
+<td style="text-align:right;">
+23.49217
+</td>
+<td style="text-align:left;">
+以海鮮熱炒為主要菜單，主要客源來自當地及附近鄉鎮居民，旺季時常有團體客群用餐，餐廳可容納120人以上，位處石梯港旁，用餐環境良好，在石梯漁港附近有好幾間海鮮餐廳，是遊客到東海岸品嘗海鮮的重要據點，其中以老字號「昕陽餐廳」一魚五吃的料理最為知名，餐廳的魚蝦都是老板趁著清晨漁船靠岸時，港邊挑選的新鮮魚貨，這間餐廳是石梯港的老字號。
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+口福海鮮餐廳
+</td>
+<td style="text-align:right;">
+121.5109
+</td>
+<td style="text-align:right;">
+23.48816
+</td>
+<td style="text-align:left;">
+位處石梯港邊，臨近昕陽餐廳，同時也是東部賞鯨一號的報名處，餐廳主要提供海鮮熱炒料理，室內空間可容納200人以上，淡季客源除了過路觀光客，主要接待當地及附近居民，旺季則以接待遊覽車團體客人為主，是吃飯加賞鯨的好所在。
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+拙而奇藝術空間
+</td>
+<td style="text-align:right;">
+121.5026
+</td>
+<td style="text-align:right;">
+23.52237
+</td>
+<td style="text-align:left;">
+結合藝術雕塑與簡單飲食的地方，以提供咖啡簡餐為主，是一個以創意藝術工作展示空間為主的餐廳，藝術濃厚的用餐空間，展示的作品為東海岸之鵝卵石及漂流木結合而成的藝術創作，只有假日才供餐，平日只提供飲料，參觀不需門票，但有最低消費五十元之限制，是一個非常有特色的空間。
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

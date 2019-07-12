@@ -35,4 +35,4 @@ dim(restaurantdata)
 data = rbind(restaurantdata, sitedata)
 dim(data)
 library(kableExtra)
-
+kable(head(data))
