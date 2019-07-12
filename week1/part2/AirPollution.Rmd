@@ -11,15 +11,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Subject
 Is PM2.5/AQI related to "restaurant" ?
-<br>Show the restaurants 5km around the site station, and view that site's AQI(Air Quality Index). We want to find out any clues then get the result, well we might not get the answer but we can learn something from this study.
+<br>Show the restaurants 5km around the site station, and view that site's AQI (Air Quality Index).
+<br>We want to find out any clues then get the result, well we might not get the answer but we can learn something from this study.
 
 ## DataSet
 
 * [餐飲 - 觀光資訊資料庫](https://data.gov.tw/dataset/7779)
-    + XML To CSV Converter [online](http://www.convertcsv.com/xml-to-csv.htm)
+    + Download .xml
+    + Conver to .csv
+    + online tool : [XML To CSV Converter](http://www.convertcsv.com/xml-to-csv.htm)
+
     
 * [空氣品質監測站經緯度](https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&topic2=%E5%A4%A7%E6%B0%A3&subject=%E6%B8%AC%E7%AB%99)
-    + rename the field name(column) from Chinese to English
+    + Rename the field name(column) from Chinese to English
+    
+     | 序號   |縣市 |鄉鎮市區 |測站名稱 |測站地址 |空品區   |經度     |緯度     |影像連結 |
+     |--------|------|--------|---------|---------|---------|---------|---------|---------|
+     | Number |City |Zone     |Name     |Address  |AreaZone |Longitud |Latitude |ImageLink|
+     
+
 
 ## Reference
 
@@ -41,21 +51,29 @@ Is PM2.5/AQI related to "restaurant" ?
     + sub-item 2 
 
 ## R
-
+### 讀入資料
 ```{r}
 library(dplyr)
 restaurantfile <- "/Users/linda/Desktop/CS+X-108/20190711/convertcsv.csv"
-#sitefile <- "/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv"
 
 restaurantdata_raw<-read.csv(restaurantfile, header=T, sep=",")
 dim(restaurantdata_raw)
 head(restaurantdata_raw)
-#sitedata<-read.csv(sitefile, header=T, sep=",")  # failed to read like this since the file name is in Chinese
+```
+### 讀檔名是中文的資料檔,下述方法不成功<br>
+|sitefile <- "/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv"                                   |
+|-------------------------------------------------------------------------------------------------------------|
+|sitedata<-read.csv(sitefile, header=T, sep=",")  # failed to read like this since the file name is in Chinese|
+
+### 改成直接寫在function內
+```{r}
 sitedata_raw<-read.csv("/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv", header=T, sep=",")
 dim(sitedata_raw)
 head(sitedata_raw)
-
-#--------------- [DataSet] site ---------------
+```
+### 處理[資料集]Site的欄位
+```{r}
+#--------------- [DataSet] Site ---------------
 sitedata <- select(sitedata_raw, Name, Longitude,Latitude)
 sitedata = sitedata[sitedata$Name != "",]    # remove empty row
 dim(sitedata)
@@ -70,12 +88,16 @@ Description=""
 sitedata = cbind(sitedata, Description)
 head(sitedata)
 dim(sitedata)
-
-#--------------- [DataSet] restaurant ---------------
+```
+### 處理[資料集]Restaurant的欄位
+```{r}
+#--------------- [DataSet] Restaurant ---------------
 restaurantdata <- select(restaurantdata_raw, Name, Px, Py, Description)
 head(restaurantdata)
 dim(restaurantdata)
-
+```
+### 合併資料集
+```{r}
 # merge [sie], [restaurant]
 data = rbind(restaurantdata, sitedata)
 dim(data)
