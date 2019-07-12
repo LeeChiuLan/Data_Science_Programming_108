@@ -35,3 +35,4 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 ## Reference
 - [王姿嵐-Data Science Programming](https://github.com/lanw868/Data-Science-Programming)
 - [NTU-CSX-DataScience](https://github.com/NTU-CSX-DataScience)
+- [韓國瑜 & 陳其邁 2018 年 9 月臉書資料文本分析](https://ntu-csx-datascience.github.io/1072-CSX4001-DataScience/CooccurrenceTextMining/TextMining.html?fbclid=IwAR1GYN5s7ki8oKE2hwLOIVf6ggNp7O4expF7fBANGnDohMHFNMF5m3BV-l8)
