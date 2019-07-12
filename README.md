@@ -21,7 +21,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
         - R learning: barplot [[R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/R_test1.html)]
     - At School
         - DataCamp
-            -tiny data:[[EatPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/EatPollution.html)]->Error in rbind()
+            -tiny data:[[EatPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]->Error in rbind()
     
 ## Courses
 - week 1
