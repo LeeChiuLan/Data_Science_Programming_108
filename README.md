@@ -10,6 +10,7 @@ Data Science Programming in Summer NTU
 My Website: <a href="https://leechiulan.github.io" target="_blank">https://leechiulan.github.io</a><br>
 <br>
 108 全國夏季學院學員 github ->[here](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)
+<br>[PecuClub - Facebook](https://www.facebook.com/groups/283207588460616/)
 ## Homework
 - week 1
   - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
@@ -36,5 +37,4 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
   
 ## Reference
 - [王姿嵐-Data Science Programming](https://github.com/lanw868/Data-Science-Programming)
-- [NTU-CSX-DataScience](https://github.com/NTU-CSX-DataScience)
 - [韓國瑜 & 陳其邁 2018 年 9 月臉書資料文本分析](https://ntu-csx-datascience.github.io/1072-CSX4001-DataScience/CooccurrenceTextMining/TextMining.html?fbclid=IwAR1GYN5s7ki8oKE2hwLOIVf6ggNp7O4expF7fBANGnDohMHFNMF5m3BV-l8)
