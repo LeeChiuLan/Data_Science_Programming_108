@@ -253,9 +253,7 @@ $(document).ready(function () {
 <pre class="r"><code>restaurantfile &lt;- &quot;/Users/linda/Desktop/CS+X-108/20190711/convertcsv.csv&quot;
 #sitefile &lt;- &quot;/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv&quot;
 
-
-restaurantdata_raw&lt;-read.csv(restaurantfile, header=T, sep=&quot;,&quot; , na.strings = c(&quot;&quot;, &quot;NA&quot;))
-#restaurantdata_raw = restaurantdata_raw %&gt;% na.omit()   # remove emty rows
+restaurantdata_raw&lt;-read.csv(restaurantfile, header=T, sep=&quot;,&quot;)
 dim(restaurantdata_raw)</code></pre>
 <pre><code>## [1] 5022   19</code></pre>
 <pre class="r"><code>head(restaurantdata_raw)</code></pre>
@@ -274,7 +272,7 @@ dim(restaurantdata_raw)</code></pre>
 ## 5                                                                                                                                                                                                      位處石梯港邊，臨近昕陽餐廳，同時也是東部賞鯨一號的報名處，餐廳主要提供海鮮熱炒料理，室內空間可容納200人以上，淡季客源除了過路觀光客，主要接待當地及附近居民，旺季則以接待遊覽車團體客人為主，是吃飯加賞鯨的好所在。
 ## 6                                                                                                                                                     結合藝術雕塑與簡單飲食的地方，以提供咖啡簡餐為主，是一個以創意藝術工作展示空間為主的餐廳，藝術濃厚的用餐空間，展示的作品為東海岸之鵝卵石及漂流木結合而成的藝術創作，只有假日才供餐，平日只提供飲料，參觀不需門票，但有最低消費五十元之限制，是一個非常有特色的空間。
 ##                               Add Zipcode            Tel
-## 1     臺北市中正區汀州路三段239號      NA           &lt;NA&gt;
+## 1     臺北市中正區汀州路三段239號      NA               
 ## 2   花蓮縣974壽豐鄉鹽寮村大橋22號     974 886-9-37533483
 ## 3       花蓮縣977豐濱鄉新社村42號     977  886-3-8711339
 ## 4 花蓮縣977豐濱鄉石梯灣港邊96-2號     977  886-3-8781396
@@ -288,72 +286,63 @@ dim(restaurantdata_raw)</code></pre>
 ## 5                                                                                             11:00 - 14:00 、 17:00 - 19:30
 ## 6 平日13:00~17:00為下午茶時段 (不供應簡餐)暑期7月～8月上午11:00可事先預約消費遇春節及連續假日三天以上11:00~17:00歡迎來電詢問
 ##   Website Picture1 Picdescribe1 Picture2 Picdescribe2 Picture3
-## 1    &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;
-## 2    &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;
-## 3    &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;
-## 4    &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;
-## 5    &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;
-## 6    &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;         &lt;NA&gt;     &lt;NA&gt;
-##   Picdescribe3       Px       Py Class  Map Parkinginfo
-## 1         &lt;NA&gt; 121.5341 25.01392     5 &lt;NA&gt;         N/A
-## 2         &lt;NA&gt; 121.6061 23.91895     9 &lt;NA&gt;        &lt;NA&gt;
-## 3         &lt;NA&gt; 121.5378 23.65318     9 &lt;NA&gt;        &lt;NA&gt;
-## 4         &lt;NA&gt; 121.5059 23.49217     9 &lt;NA&gt;        &lt;NA&gt;
-## 5         &lt;NA&gt; 121.5109 23.48816     9 &lt;NA&gt;        &lt;NA&gt;
-## 6         &lt;NA&gt; 121.5026 23.52237     9 &lt;NA&gt;        &lt;NA&gt;</code></pre>
-<pre class="r"><code>#sitedata&lt;-read.csv(sitefile, header=T, sep=&quot;,&quot;)
-sitedata_raw&lt;-read.csv(&quot;/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv&quot;, header=T, sep=&quot;,&quot;, na.strings = c(&quot;&quot;, &quot;NA&quot;))
-sitedata_raw= sitedata_raw %&gt;% na.omit()   # remove emty rows
+## 1                                                             
+## 2                                                             
+## 3                                                             
+## 4                                                             
+## 5                                                             
+## 6                                                             
+##   Picdescribe3       Px       Py Class Map Parkinginfo
+## 1              121.5341 25.01392     5             N/A
+## 2              121.6061 23.91895     9                
+## 3              121.5378 23.65318     9                
+## 4              121.5059 23.49217     9                
+## 5              121.5109 23.48816     9                
+## 6              121.5026 23.52237     9</code></pre>
+<pre class="r"><code>#sitedata&lt;-read.csv(sitefile, header=T, sep=&quot;,&quot;)  # failed to read like this since the file name is in Chinese
+sitedata_raw&lt;-read.csv(&quot;/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv&quot;, header=T, sep=&quot;,&quot;)
 dim(sitedata_raw)</code></pre>
-<pre><code>## [1] 53  9</code></pre>
+<pre><code>## [1] 79  9</code></pre>
 <pre class="r"><code>head(sitedata_raw)</code></pre>
-<pre><code>##    Number   City   Zone   Name                          Address   AreaZone
-## 1       1 臺北市 北投區   士林     臺北市北投區文林北路１５５號 北部空品區
-## 2       2 臺北市 萬華區   萬華     臺北市萬華區中華路一段６６號 北部空品區
-## 7       7 臺北市 北投區   陽明     臺北市北投區竹子湖路１１１號 北部空品區
-## 9       9 新北市 林口區   林口 新北市林口區文化北路一段４２５號 北部空品區
-## 10     10 新北市 石門區 富貴角           新北市石門區富貴角海邊 北部空品區
-## 11     11 新北市 萬里區   萬里       新北市萬里區瑪鋉路２２１號 北部空品區
-##    Longitude Latitude                               ImageLink
-## 1   121.5145 25.10592 [URL]/ATM/AQX_P_01/011-201907111030.jpg
-## 2   121.5080 25.04650 [URL]/ATM/AQX_P_01/013-201907111030.jpg
-## 7   121.5296 25.18272 [URL]/ATM/AQX_P_01/064-201907111040.jpg
-## 9   121.3657 25.07857 [URL]/ATM/AQX_P_01/009-201907111040.jpg
-## 10  121.5380 25.29744 [URL]/ATM/AQX_P_01/084-201907111030.jpg
-## 11  121.6899 25.17967 [URL]/ATM/AQX_P_01/003-201907111030.jpg</code></pre>
-<pre class="r"><code>sitedata &lt;- select(sitedata_raw, Name, Longitude,Latitude)
-head(sitedata)</code></pre>
-<pre><code>##      Name Longitude Latitude
-## 1    士林  121.5145 25.10592
-## 2    萬華  121.5080 25.04650
-## 7    陽明  121.5296 25.18272
-## 9    林口  121.3657 25.07857
-## 10 富貴角  121.5380 25.29744
-## 11   萬里  121.6899 25.17967</code></pre>
+<pre><code>##   Number   City   Zone Name                          Address   AreaZone
+## 1      1 臺北市 北投區 士林     臺北市北投區文林北路１５５號 北部空品區
+## 2      2 臺北市 萬華區 萬華     臺北市萬華區中華路一段６６號 北部空品區
+## 3      3 臺北市 大同區 大同     臺北市大同區重慶北路三段２號 北部空品區
+## 4      4 臺北市 中山區 中山     臺北市中山區林森北路５１１號 北部空品區
+## 5      5 臺北市 大安區 古亭 臺北市大安區羅斯福路三段２０１號 北部空品區
+## 6      6 臺北市 松山區 松山   臺北市松山區八德路四段７４６號 北部空品區
+##   Longitude Latitude                               ImageLink
+## 1  121.5145 25.10592 [URL]/ATM/AQX_P_01/011-201907111030.jpg
+## 2  121.5080 25.04650 [URL]/ATM/AQX_P_01/013-201907111030.jpg
+## 3  121.5133 25.06320                                        
+## 4  121.5265 25.06236                                        
+## 5  121.5296 25.02061                                        
+## 6  121.5786 25.05000</code></pre>
+<pre class="r"><code>#--------------- [DataSet] site ---------------
+sitedata &lt;- select(sitedata_raw, Name, Longitude,Latitude)
+sitedata = sitedata[sitedata$Name != &quot;&quot;,]    # remove empty row
+dim(sitedata)</code></pre>
+<pre><code>## [1] 77  3</code></pre>
 <pre class="r"><code>sitedata$Name &lt;- paste(sitedata$Name,&quot;Site&quot;, sep=&quot;_&quot;)   #append &quot;Site&quot; to each $Name
-head(sitedata)</code></pre>
-<pre><code>##           Name Longitude Latitude
-## 1    士林_Site  121.5145 25.10592
-## 2    萬華_Site  121.5080 25.04650
-## 7    陽明_Site  121.5296 25.18272
-## 9    林口_Site  121.3657 25.07857
-## 10 富貴角_Site  121.5380 25.29744
-## 11   萬里_Site  121.6899 25.17967</code></pre>
-<pre class="r"><code>names(sitedata)[names(sitedata) == &quot;Longitude&quot;] &lt;- &quot;Px&quot;
+#head(sitedata)
+
+# rename the specified columns' name 
+names(sitedata)[names(sitedata) == &quot;Longitude&quot;] &lt;- &quot;Px&quot;
 names(sitedata)[names(sitedata) == &quot;Latitude&quot;] &lt;- &quot;Py&quot;
+# add a column - &quot;Description&quot;
 Description=&quot;&quot;
 sitedata = cbind(sitedata, Description)
 head(sitedata)</code></pre>
-<pre><code>##           Name       Px       Py Description
-## 1    士林_Site 121.5145 25.10592            
-## 2    萬華_Site 121.5080 25.04650            
-## 7    陽明_Site 121.5296 25.18272            
-## 9    林口_Site 121.3657 25.07857            
-## 10 富貴角_Site 121.5380 25.29744            
-## 11   萬里_Site 121.6899 25.17967</code></pre>
+<pre><code>##        Name       Px       Py Description
+## 1 士林_Site 121.5145 25.10592            
+## 2 萬華_Site 121.5080 25.04650            
+## 3 大同_Site 121.5133 25.06320            
+## 4 中山_Site 121.5265 25.06236            
+## 5 古亭_Site 121.5296 25.02061            
+## 6 松山_Site 121.5786 25.05000</code></pre>
 <pre class="r"><code>dim(sitedata)</code></pre>
-<pre><code>## [1] 53  4</code></pre>
-<pre class="r"><code>#---------------
+<pre><code>## [1] 77  4</code></pre>
+<pre class="r"><code>#--------------- [DataSet] restaurant ---------------
 restaurantdata &lt;- select(restaurantdata_raw, Name, Px, Py, Description)
 head(restaurantdata)</code></pre>
 <pre><code>##               Name       Px       Py
@@ -372,7 +361,10 @@ head(restaurantdata)</code></pre>
 ## 6                                                                                                                                                     結合藝術雕塑與簡單飲食的地方，以提供咖啡簡餐為主，是一個以創意藝術工作展示空間為主的餐廳，藝術濃厚的用餐空間，展示的作品為東海岸之鵝卵石及漂流木結合而成的藝術創作，只有假日才供餐，平日只提供飲料，參觀不需門票，但有最低消費五十元之限制，是一個非常有特色的空間。</code></pre>
 <pre class="r"><code>dim(restaurantdata)</code></pre>
 <pre><code>## [1] 5022    4</code></pre>
-<pre class="r"><code>data = rbind(restaurantdata, sitedata)</code></pre>
+<pre class="r"><code># merge [sie], [restaurant]
+data = rbind(restaurantdata, sitedata)
+dim(data)</code></pre>
+<pre><code>## [1] 5099    4</code></pre>
 </div>
 
 
