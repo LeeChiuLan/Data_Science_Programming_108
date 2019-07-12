@@ -9,12 +9,35 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Subject
+Is PM2.5/AQI related to "restaurant" ?
+<br>Show the restaurants 5km around the site station, and view that site's AQI(Air Quality Index). We want to find out any clues then get the result, well we might not get the answer but we can learn something from this study.
+
 ## DataSet
 
-- [餐飲 - 觀光資訊資料庫](https://data.gov.tw/dataset/7779)
-  - XML To CSV Converter [online](http://www.convertcsv.com/xml-to-csv.htm)
-- [空氣品質監測站經緯度](https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&topic2=%E5%A4%A7%E6%B0%A3&subject=%E6%B8%AC%E7%AB%99)
+* [餐飲 - 觀光資訊資料庫](https://data.gov.tw/dataset/7779)
+    + XML To CSV Converter [online](http://www.convertcsv.com/xml-to-csv.htm)
+    
+* [空氣品質監測站經緯度](https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&topic2=%E5%A4%A7%E6%B0%A3&subject=%E6%B8%AC%E7%AB%99)
 
+## Reference
+
+* （https://wywu.pixnet.net/blog/post/22338038-台灣地區經緯度的距離)
+    + 西  1度 101751.561277 M
+    + 東  1度 101751.561277 M
+    + 南  1度 110751.075273 M
+    + 北  1度 110765.515243 M
+  
+
+* unordered list
+* item 2
+    + sub-item 1
+    + sub-item 2
+
+1. ordered list
+2. item 2
+    + sub-item 1
+    + sub-item 2 
 
 ```{r}
 library(dplyr)

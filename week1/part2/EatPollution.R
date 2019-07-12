@@ -14,6 +14,7 @@ head(sitedata)
 #---------------
 locationDate <- select(data, Name, Zipcode, Px, Py)
 head(locationDate)
+
 nrow(locationDate)
 
 EatPollution = rbind(data, sitedata)
