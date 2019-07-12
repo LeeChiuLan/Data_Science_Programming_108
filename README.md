@@ -13,6 +13,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 ## Homework
 - week 1
   - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
+  - hw1 [[tiny data](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
   
 ## Week 1
 - Progress:
@@ -21,11 +22,15 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
         - R learning: barplot [[R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/R_test1.html)]
     - At School
         - DataCamp
-            -tiny data:[[AirPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]->Error in rbind()
+            - tiny data:[[AirPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
+            - 爬蟲
     
 ## Courses
 - week 1
   - 投影片 [資料科學課程簡介](https://docs.google.com/presentation/d/e/2PACX-1vRNotYqGl42khFyyjuiRYQ9cOOwNsBgGXgW-IBoIJDdiG6T2Adw2X-SO4dDGPhKqd7JlEb3ku9Hmn_7/pub?start=false&loop=false&delayms=3000)
+  - 投影片 [資料收集與清洗](https://docs.google.com/presentation/d/e/2PACX-1vSx3-g4Z4LgimZKlKfk_L2gH00mDAyQo8DIugatiEXtCUI7hRNuxNtzzuobjLy-VadSpuohEsh4OeqK/pub?start=false&loop=false&delayms=3000)
+  - [108 全國夏季學院 (7/8) Class 1](http://www.peculab.org/2019/07/03/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2%e8%aa%b2%e7%a8%8b%e5%85%a7%e5%ae%b9/)
+  - [108 全國夏季學院 (7/11) Class 2](https://www.peculab.org/2019/07/10/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-11-class-2/)
   
 ## Reference
 - [王姿嵐-Data Science Programming](https://github.com/lanw868/Data-Science-Programming)
