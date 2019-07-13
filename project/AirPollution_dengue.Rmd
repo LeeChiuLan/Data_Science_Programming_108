@@ -1,7 +1,7 @@
 ---
-title: "AirPollution"
+title: "Dengue and AirPollution"
 author: "Linda Lee"
-date: "2019/7/11"
+date: "2019/7/12"
 output: html_document
 ---
 
@@ -10,9 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Subject
-Is PM2.5/AQI related to "restaurant" ?
-<br>Show the restaurants 5km around the site station, and view that site's AQI (Air Quality Index).
-<br>We want to find out any clues then get the result, well we might not get the answer but we can learn something from this study.
+Is dengue related to air pollution ?
+<br>Let's find out!
 
 ## DataSet
 

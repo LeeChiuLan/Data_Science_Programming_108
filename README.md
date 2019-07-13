@@ -10,18 +10,20 @@ Data Science Programming in Summer NTU
 My Website: <a href="https://leechiulan.github.io" target="_blank">https://leechiulan.github.io</a><br>
 <br>
 108 全國夏季學院學員 github ->[here](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)
-<br>[PecuClub - Facebook](https://www.facebook.com/groups/283207588460616/)
+<br>PecuClub - Facebook ->[here](https://www.facebook.com/groups/283207588460616/)
 ## Homework
 - week 1
   - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
   - hw1 [[tiny data](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
-  - hw1 爬蟲
+  - hw1 [project]:[tiny data]
   
 ## Week 1
 - Progress:
     - At home
         - R learning: ggplot2 [[myRR01](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/myRR01.html)] 
         - R learning: barplot [[R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/R_test1.html)]
+        - R learning: [R 教學 - G.T. Wang](https://blog.gtwang.org/programming/r/)
+        - R 爬蟲s
     - At School
         - DataCamp
             - tiny data:[[AirPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
