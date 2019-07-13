@@ -9,6 +9,7 @@ Data Science Programming in Summer NTU
 <br>
 My Website: <a href="https://leechiulan.github.io" target="_blank">https://leechiulan.github.io</a><br>
 <br>
+## Link
 108 全國夏季學院學員 github ->[here](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)
 <br>PecuClub - Facebook ->[here](https://www.facebook.com/groups/283207588460616/)
 ## Homework
@@ -28,7 +29,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
     - At School
         - DataCamp
             - [爬蟲教學](https://docs.google.com/presentation/d/1whYE2LqOluHs4sRs7d91U3QzGnABse7TWDFDkB1_-Zg/edit#slide=id.p) ([程式](https://miccwan.github.io/1072-R/crawler/stackoverflow.html))
-            - [dplyr示範](https://lessthan41.github.io/SummerCollege_108/dplyr_tutorial.html?fbclid=IwAR07oOsR2thLWuBR4sOBebmQDe2TQdSxhfsY_DPHrlRkSq17OvQ-ntKQGwM)
+            - [dplyr示範](https://lessthan41.github.io/SummerCollege_108/dplyr_tutorial.html)
 - Project:
         - [project]:[tiny data](https://leechiulan.github.io/Data_Science_Programming_108/project/AirPollution_dengue.html)
 
