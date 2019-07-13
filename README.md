@@ -14,7 +14,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 ## Homework
 - week 1
   - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
-  - hw1 [[tiny data](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
+  - hw1: tiny data:[[AirPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
 - week 2
   
   
@@ -27,7 +27,6 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
         - R Study   : [R 教學 - G.T. Wang](https://blog.gtwang.org/programming/r/)
     - At School
         - DataCamp
-            - tiny data:[[AirPollution](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html)]
             - [爬蟲教學](https://docs.google.com/presentation/d/1whYE2LqOluHs4sRs7d91U3QzGnABse7TWDFDkB1_-Zg/edit#slide=id.p) ([程式](https://miccwan.github.io/1072-R/crawler/stackoverflow.html))
             - [dplyr示範](https://lessthan41.github.io/SummerCollege_108/dplyr_tutorial.html?fbclid=IwAR07oOsR2thLWuBR4sOBebmQDe2TQdSxhfsY_DPHrlRkSq17OvQ-ntKQGwM)
 - Project:
