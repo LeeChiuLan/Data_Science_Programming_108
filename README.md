@@ -26,6 +26,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
         - R learning: barplot [[R_test1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/R_test1.html)]
         - R learning: 爬蟲
         - R Study   : [R 教學 - G.T. Wang](https://blog.gtwang.org/programming/r/)
+        - R Samples : [ggmap](https://leechiulan.github.io/Data_Science_Programming_108/Samples/ggmap)
     - At School
         - DataCamp
             - [爬蟲教學](https://docs.google.com/presentation/d/1whYE2LqOluHs4sRs7d91U3QzGnABse7TWDFDkB1_-Zg/edit#slide=id.p) ([程式](https://miccwan.github.io/1072-R/crawler/stackoverflow.html))
