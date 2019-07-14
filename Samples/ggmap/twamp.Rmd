@@ -1,0 +1,21 @@
+---
+title: "ggmap + taiwan map"
+author: "Linda Lee"
+date: "2019/7/14"
+output: html_document
+---
+
+## Refernece [NTU+CSX-DataScience-108](https://docs.google.com/presentation/d/1JthJkD7WXJVaCwuuNU5t5WU3NgW4EAGqtaoNCWz7E2w/edit?usp=sharing)
+
+```{r}
+library(ggplot2)
+library(ggmap)
+if(has_google_key()){
+  twmap <- get_googlemap(center = c(lon=120.58,lat=23.58),zoom = 7, language = "zh-TW")
+  ggmap(twmap)
+  }else
+  {
+    cat("register_google(key =\"xxxxx....\") Firstly")
+  }
+```
+
