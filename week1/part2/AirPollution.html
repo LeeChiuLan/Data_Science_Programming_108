@@ -367,20 +367,17 @@ dim(sitedata)</code></pre>
 <pre class="r"><code>sitedata$Name &lt;- paste(sitedata$Name,&quot;Site&quot;, sep=&quot;_&quot;)   #append &quot;Site&quot; to each $Name
 #head(sitedata)
 
-# rename the specified columns' name 
-names(sitedata)[names(sitedata) == &quot;Longitude&quot;] &lt;- &quot;Px&quot;
-names(sitedata)[names(sitedata) == &quot;Latitude&quot;] &lt;- &quot;Py&quot;
 # add a column - &quot;Description&quot;
 Description=&quot;&quot;
 sitedata = cbind(sitedata, Description)
 head(sitedata)</code></pre>
-<pre><code>##        Name       Px       Py Description
-## 1 士林_Site 121.5145 25.10592            
-## 2 萬華_Site 121.5080 25.04650            
-## 3 大同_Site 121.5133 25.06320            
-## 4 中山_Site 121.5265 25.06236            
-## 5 古亭_Site 121.5296 25.02061            
-## 6 松山_Site 121.5786 25.05000</code></pre>
+<pre><code>##        Name Longitude Latitude Description
+## 1 士林_Site  121.5145 25.10592            
+## 2 萬華_Site  121.5080 25.04650            
+## 3 大同_Site  121.5133 25.06320            
+## 4 中山_Site  121.5265 25.06236            
+## 5 古亭_Site  121.5296 25.02061            
+## 6 松山_Site  121.5786 25.05000</code></pre>
 <pre class="r"><code>dim(sitedata)</code></pre>
 <pre><code>## [1] 77  4</code></pre>
 </div>
@@ -388,14 +385,17 @@ head(sitedata)</code></pre>
 <h3>處理[資料集]Restaurant:含欄位</h3>
 <pre class="r"><code>#--------------- [DataSet] Restaurant ---------------
 restaurantdata &lt;- select(restaurantdata_raw, Name, Px, Py, Description)
+# rename the specified columns' name 
+names(restaurantdata)[names(restaurantdata) == &quot;Px&quot;] &lt;- &quot;Longitude&quot;
+names(restaurantdata)[names(restaurantdata) == &quot;Py&quot;] &lt;- &quot;Latitude&quot;
 head(restaurantdata)</code></pre>
-<pre><code>##               Name       Px       Py
-## 1         龍潭豆花 121.5341 25.01392
-## 2 望海巴耐野菜餐廳 121.6061 23.91895
-## 3     噶瑪蘭海產店 121.5378 23.65318
-## 4         昕陽餐廳 121.5059 23.49217
-## 5     口福海鮮餐廳 121.5109 23.48816
-## 6   拙而奇藝術空間 121.5026 23.52237
+<pre><code>##               Name Longitude Latitude
+## 1         龍潭豆花  121.5341 25.01392
+## 2 望海巴耐野菜餐廳  121.6061 23.91895
+## 3     噶瑪蘭海產店  121.5378 23.65318
+## 4         昕陽餐廳  121.5059 23.49217
+## 5     口福海鮮餐廳  121.5109 23.48816
+## 6   拙而奇藝術空間  121.5026 23.52237
 ##                                                                                                                                                                                                                                                                                                                                                                                                                Description
 ## 1                                                                                                                                                                                                                                                       龍潭豆花只賣一種東西，也就是現點現做的古早味豆花，讓饕客把味蕾的重點回歸到豆花本身，豆花滑順綿密，比例調配得很好，帶著微微焦香，豆花出自店家自製，有著自己的特色。
 ## 2 非常有特色的原住民餐點餐廳，位於台十一線8K區段上，是東海岸行經花蓮大橋進入東海岸國家風景區之後，花蓮遊客中心前，第一家餐飲服務業者；業者於建物外部以當地竹子搭蓋起大門及挑高竹亭，呈顯其自然風格建築形式是其特色。望海巴耐野菜餐廳位於台十一線8K區段上，是東海岸行經花蓮大橋進入東海岸國家風景區之後，花蓮遊客中心前，第一家餐飲服務業者；業者於建物外部以當地竹子搭蓋起大門及挑高竹亭，呈顯其自然風格建築形式是其特色。
@@ -426,10 +426,10 @@ dim(data)</code></pre>
 Name
 </th>
 <th style="text-align:right;">
-Px
+Longitude
 </th>
 <th style="text-align:right;">
-Py
+Latitude
 </th>
 <th style="text-align:left;">
 Description
@@ -524,7 +524,7 @@ Description
 </tbody>
 </table>
 <pre class="r"><code>summary(data)</code></pre>
-<pre><code>##            Name            Px              Py       
+<pre><code>##            Name        Longitude        Latitude    
 ##  台東東帝租車:   3   Min.   :118.2   Min.   :21.94  
 ##  魚之鄉      :   3   1st Qu.:120.3   1st Qu.:23.11  
 ##  阿輝炒鱔魚  :   2   Median :120.7   Median :23.98  

@@ -17,9 +17,6 @@ dim(sitedata)
 sitedata$Name <- paste(sitedata$Name,"Site", sep="_")   #append "Site" to each $Name
 #head(sitedata)
 
-# rename the specified columns' name 
-names(sitedata)[names(sitedata) == "Longitude"] <- "Px"
-names(sitedata)[names(sitedata) == "Latitude"] <- "Py"
 # add a column - "Description"
 Description=""
 sitedata = cbind(sitedata, Description)
@@ -28,6 +25,9 @@ dim(sitedata)
 
 #--------------- [DataSet] restaurant ---------------
 restaurantdata <- select(restaurantdata_raw, Name, Px, Py, Description)
+# rename the specified columns' name 
+names(restaurantdata)[names(restaurantdata) == "Px"] <- "Longitude"
+names(restaurantdata)[names(restaurantdata) == "Py"] <- "Latitude"
 head(restaurantdata)
 dim(restaurantdata)
 
