@@ -38,6 +38,8 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 - Progress:
     - At home
     - At School
+        - DataCamp
+            - [ggplot](https://leechiulan.github.io/Data_Science_Programming_108/week2/part1/testDiamonds.html)
     
 ## Courses
 - week 1
