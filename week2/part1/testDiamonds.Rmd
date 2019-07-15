@@ -16,45 +16,45 @@ rawdate=diamonds
 
 ## 單變數：類別型
 ```{r}
-ggplot(data = rawdate, aes(x= cut)) + geom_bar(fill = "lightblue", colour="black")
+ggplot(data = diamonds, aes(x= cut)) + geom_bar(fill = "lightblue", colour="black")
 ```
 
 ## 雙變數(類別型):
 ```{r}
-s <- ggplot(data = rawdate, aes(x= cut, fill = clarity))
+s <- ggplot(data = diamonds, aes(x= cut, fill = clarity))
 s + geom_bar()
 ```
 
 ## 單變數：連續型
 ```{r}
-ggplot(data = rawdate, aes(x = price)) + geom_histogram()
+ggplot(data = diamonds, aes(x = price)) + geom_histogram()
 ```
 
 ## 散佈圖(1)
 ```{r}
-ggplot(data = rawdate, aes(x=carat,y = price)) + geom_point()
+ggplot(data = diamonds, aes(x=carat,y = price)) + geom_point()
 ```
 
 ## 散佈圖(2)
 ```{r}
-ggplot(data = rawdate, aes(x=table,y = depth)) + geom_point()
+ggplot(data = diamonds, aes(x=table,y = depth)) + geom_point()
 ```
 
 ## 折線圖(1)
 ```{r}
-gdata <- head(rawdate,30)
+gdata <- head(diamonds,30)
 s <- ggplot(data = gdata, aes(x=carat,y=price, group=cut)) 
 s + geom_line(linetype="dashed", color="lightblue", size=1.2) + geom_point(color="red",size=3)
 ```
 
 ## 折線圖(2)
 ```{r}
-ggplot(data = rawdate, aes(x=x, y= price)) + geom_line()
+ggplot(data = diamonds, aes(x=x, y= price)) + geom_line()
 ```
 
 ## 盒狀圖
 ```{r}
-ggplot(rawdate, aes(x=clarity, y=depth)) +
+ggplot(diamonds, aes(x=clarity, y=depth)) +
 geom_boxplot()
 ```
 
@@ -66,7 +66,7 @@ geom_boxplot()
 
 ## Count Plot
 ```{r}
-gdata <- head(rawdate,100)
+gdata <- head(diamonds,50)
 g <- ggplot(gdata, aes(x=cut, y=price)) 
 g + geom_count(col="tomato3")
 ```
