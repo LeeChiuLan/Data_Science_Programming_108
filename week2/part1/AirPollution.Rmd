@@ -1,0 +1,100 @@
+---
+title: "AirPollution + Restaurant"
+author: "Linda Lee"
+date: "2019/7/11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Subject
+Is PM2.5/AQI related to "restaurant" ?
+<br>Show the restaurants 5km around the site station, and view that site's AQI (Air Quality Index).
+<br>We want to find out any clues then get the result, well we might not get the answer but we can learn something from this study.
+
+## DataSet
+
+* [餐飲 - 觀光資訊資料庫](https://data.gov.tw/dataset/7779)
+    + Download .xml
+    + Conver to .csv
+    + online tool : [XML To CSV Converter](http://www.convertcsv.com/xml-to-csv.htm)
+
+    
+* [空氣品質監測站經緯度](https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&topic2=%E5%A4%A7%E6%B0%A3&subject=%E6%B8%AC%E7%AB%99)
+    + Download .csv
+    + Rename the field name(column) from Chinese to English
+    
+     | 序號   |縣市 |鄉鎮市區 |測站名稱 |測站地址 |空品區   |經度     |緯度     |影像連結 |
+     |--------|------|--------|---------|---------|---------|---------|---------|---------|
+     | Number |City |Zone     |Name     |Address  |AreaZone |Longitud |Latitude |ImageLink|
+     
+
+
+## Reference
+
+* （https://wywu.pixnet.net/blog/post/22338038-台灣地區經緯度的距離)
+    + 西  1度 101751.561277 M
+    + 東  1度 101751.561277 M
+    + 南  1度 110751.075273 M
+    + 北  1度 110765.515243 M
+  
+
+## R
+### 讀入資料
+```{r}
+library(dplyr)
+restaurantfile <- "/Users/linda/Desktop/CS+X-108/20190711/convertcsv.csv"
+
+restaurantdata_raw<-read.csv(restaurantfile, header=T, sep=",")
+dim(restaurantdata_raw)
+head(restaurantdata_raw)
+```
+### 讀檔名是中文的資料檔,下述方法不成功<br>
+|sitefile <- "/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv"                                   |
+|-------------------------------------------------------------------------------------------------------------|
+|sitedata<-read.csv(sitefile, header=T, sep=",")  # failed to read like this since the file name is in Chinese|
+
+### 改成直接寫在function內
+```{r}
+sitedata_raw<-read.csv("/Users/linda/Desktop/CS+X-108/20190711/空氣品質監測站Eng.csv", header=T, sep=",")
+dim(sitedata_raw)
+head(sitedata_raw)
+```
+### 處理[資料集]Site:含欄位
+```{r}
+#--------------- [DataSet] Site ---------------
+sitedata <- select(sitedata_raw, Name, Longitude,Latitude)
+sitedata = sitedata[sitedata$Name != "",]    # remove empty row
+dim(sitedata)
+sitedata$Name <- paste(sitedata$Name,"Site", sep="_")   #append "Site" to each $Name
+#head(sitedata)
+
+# add a column - "Description"
+Description=""
+sitedata = cbind(sitedata, Description)
+head(sitedata)
+dim(sitedata)
+```
+### 處理[資料集]Restaurant:含欄位
+```{r}
+#--------------- [DataSet] Restaurant ---------------
+restaurantdata <- select(restaurantdata_raw, Name, Px, Py, Description)
+# rename the specified columns' name 
+names(restaurantdata)[names(restaurantdata) == "Px"] <- "Longitude"
+names(restaurantdata)[names(restaurantdata) == "Py"] <- "Latitude"
+head(restaurantdata)
+dim(restaurantdata)
+```
+### 合併資料集
+```{r}
+# merge [sie], [restaurant]
+data = rbind(restaurantdata, sitedata)
+dim(data)
+library(kableExtra)
+kable(head(data))
+summary(data)
+```
+
+
