@@ -23,3 +23,7 @@ s <- ggplot(data = gdata, aes(x=carat,y=price, group=cut))
 s + geom_line(linetype="dashed", color="lightblue", size=1.2) + geom_point(color="red",size=3)
 
 ggplot(data = diamonds, aes(x=x, y= price)) + geom_line()
+
+gdata <- head(rawdate,100)
+g <- ggplot(gdata, aes(x=cut, y=price)) 
+g + geom_count(col="tomato3")
