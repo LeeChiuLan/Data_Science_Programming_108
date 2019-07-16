@@ -14,9 +14,11 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 <br>PecuClub - Facebook ->[here](https://www.facebook.com/groups/283207588460616/)
 ## Homework
 - week 1
-  - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
-  - [hw1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html): tiny data:[AirPollution]
+  - [hw1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
+  - [hw2](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html): tiny data:[AirPollution]
 - week 2
+  - [hw1](https://leechiulan.github.io/Data_Science_Programming_108/week2/part1/AirPollutionAQI.html)
+  - [hw2]
   
   
 ## Week 1
