@@ -95,6 +95,12 @@ head(AQIdata)
 library(ggplot2)
 ```
 
+#### Weekday level 順序
+```{r}
+AQIdata$Weekday <- ordered(AQIdata$Weekday, levels=c("Mon", "Tue", "Wed", "Thu", 
+"Fri", "Sat", "Sun"))
+```
+
 ### 關注[新店監測站]
 ```{r}
 Xindian_data<-AQIdata%>%filter(SiteName=="新店")
@@ -105,11 +111,12 @@ Xindian_data<-AQIdata%>%filter(SiteName=="新店")
 ggplot(data = Xindian_data, aes(x=MonitorDate, y= AQI)) + geom_line()
 ```
 
+
 ```{r}
 ggplot(data = Xindian_data, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
 ```
 
-### 計算各星期的AQI平均值
+### 計算各星期的AQI, PM2.5平均值
 
 #### 先對空值資料去除,以免計算出NA
 ```{r}
@@ -118,7 +125,34 @@ df <- df[!(df$AQI == ""), ]
 df <- df[!(df$PM25SubIndex == ""), ]
 ```
 
+
 ```{r}
 library(plyr)
-ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
+df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
+print(df_AQI)
+```
+
+```{r}
+df_AQI <- df_AQI %>% na.omit()   # remove row with NA
+print(df_AQI)
+```
+
+#### 畫出各星期平均AQI值
+```{r}
+g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) + 
+  geom_bar(stat="identity", width=.5, fill="tomato3") + 
+  labs(title="Site:[Xindian] AQI", 
+       caption="source: mpg") + 
+  theme(axis.text.x = element_text(angle=65, vjust=0.6))
+g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
+```
+
+#### 畫出各星期平均PM2.5值
+```{r}
+g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_PM25, label = Rate_PM25)) + 
+  geom_bar(stat="identity", width=.5, fill="gray") + 
+  labs(title="Site:[Xindian] PM2.5", 
+       caption="source: mpg") + 
+  theme(axis.text.x = element_text(angle=65, vjust=0.6))
+g + geom_text(aes(label = Rate_PM25),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
 ```

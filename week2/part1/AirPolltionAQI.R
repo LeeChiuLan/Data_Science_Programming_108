@@ -51,7 +51,14 @@ AQIdata=merge(AQIdata_raw, sitedata, by.x="SiteName")
 head(AQIdata)
 
 library(ggplot2)
+
+# ordering of weekday
+AQIdata$Weekday <- ordered(AQIdata$Weekday, levels=c("Mon", "Tue", "Wed", "Thu", 
+                                                     "Fri", "Sat", "Sun"))
+
 Xindian_data<-AQIdata%>%filter(SiteName=="新店")
+
+# remove a row if value == ""
 df <- Xindian_data
 df <- df[!(df$AQI == ""), ]
 df <- df[!(df$PM25SubIndex == ""), ]
@@ -59,7 +66,14 @@ ggplot(data = df, aes(x=MonitorDate, y= AQI)) + geom_line()
 ggplot(data = df, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
 
 library(plyr)
-ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
+df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
+
+g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) + 
+  geom_bar(stat="identity", width=.5, fill="tomato3") + 
+  labs(title="Site:[Xindian] AQI", 
+       caption="source: mpg") + 
+  theme(axis.text.x = element_text(angle=65, vjust=0.6))
+g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
 
 # function: isContained
 isContained <- function(r,Obj1, Obj2) {
