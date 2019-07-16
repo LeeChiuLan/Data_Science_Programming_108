@@ -7,7 +7,6 @@ sitedata_raw<-read.csv("../../Datasets/空氣品質監測站Eng.csv", header=T, 
 AQIfile <- "../../Datasets/ATM00679_2019_0322_0430.xlsx"
 AQIdata_raw <- read_xlsx(AQIfile)
 head(AQIdata_raw)
-str(AQIdata_raw)
 
 #--------------- [DataSet] Site ---------------
 sitedata <- select(sitedata_raw, Name, Longitude,Latitude) %>%
@@ -50,6 +49,17 @@ sitedata=appTheNearestDistm(sitedata,"Longitude", "Latitude")
 #--------------- Merge DataSet ---------------
 AQIdata=merge(AQIdata_raw, sitedata, by.x="SiteName")
 head(AQIdata)
+
+library(ggplot2)
+Xindian_data<-AQIdata%>%filter(SiteName=="新店")
+df <- Xindian_data
+df <- df[!(df$AQI == ""), ]
+df <- df[!(df$PM25SubIndex == ""), ]
+ggplot(data = df, aes(x=MonitorDate, y= AQI)) + geom_line()
+ggplot(data = df, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
+
+library(plyr)
+ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
 
 # function: isContained
 isContained <- function(r,Obj1, Obj2) {

@@ -12,25 +12,113 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Subject
 
 
+## R 開始
 ```{r}
 library(dplyr)
 library(readxl)
+library(geosphere)
+```
 
+### Functions
+
+#### function - getDistm() 計算地理兩點位置之距離,單位：M
+```{r}
+
+getDistm <- function(lon1, lat1,lon2, lat2) {
+  d <- distm (c(lon1, lat1), c(lon2, lat2), fun = distHaversine)
+  return(d)
+}
+```
+
+#### function - getTheNearestDistm() 已知座標點,找出最近監測站及距離數
+```{r}
+appTheNearestDistm <- function(dat,col1,col2){
+  num <- nrow(dat)
+  for(i in 1:num){
+    minDistm <- .Machine$double.xmax
+    ptr <- NULL
+    for(j in 1:num){
+      if(i!=j){
+        d <- getDistm(dat[i,col1],dat[i,col2], dat[j,col1],dat[j,col2])
+        if(d < minDistm){
+          minDistm <- d
+          ptr <- j
+        }
+      }
+    }
+    dat[i,"NearestSiteDistm"] <- minDistm
+    dat[i,"NearestSite"] <- dat[ptr,"SiteName"]
+  }
+  
+  return(dat)
+}
+```
+
+
+### 讀入資料
+```{r}
 sitedata_raw<-read.csv("../../Datasets/空氣品質監測站Eng.csv", header=T, sep=",")
+head(sitedata_raw)
 
 AQIfile <- "../../Datasets/ATM00679_2019_0322_0430.xlsx"
 AQIdata_raw <- read_xlsx(AQIfile)
 head(AQIdata_raw)
-str(AQIdata_raw)
+```
 
-#--------------- [DataSet] Site ---------------
+### 處理資料集[Site]
+#### 選擇觀察的欄位;移除空白row
+```{r}
 sitedata <- select(sitedata_raw, Name, Longitude,Latitude) %>%
   rename(SiteName=Name)
 sitedata = sitedata[sitedata$SiteName != "",]    # remove empty row
 dim(sitedata)
-head(sitedata)
 
+head(sitedata)
+```
+
+
+#### 取得各監測站的最近鄰居(監測站)及相距距離
+```{r}
+sitedata=appTheNearestDistm(sitedata,"Longitude", "Latitude")
+head(sitedata)
+```
+
+### 併入[Site]資料集到[AQI]內
+```{r}
 #--------------- Merge DataSet ---------------
 AQIdata=merge(AQIdata_raw, sitedata, by.x="SiteName")
 head(AQIdata)
+```
+
+## 對[AQI]進行資料視覺化分析
+```{r}
+library(ggplot2)
+```
+
+### 關注[新店監測站]
+```{r}
+Xindian_data<-AQIdata%>%filter(SiteName=="新店")
+```
+
+
+```{r}
+ggplot(data = Xindian_data, aes(x=MonitorDate, y= AQI)) + geom_line()
+```
+
+```{r}
+ggplot(data = Xindian_data, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
+```
+
+### 計算各星期的AQI平均值
+
+#### 先對空值資料去除,以免計算出NA
+```{r}
+df <- Xindian_data
+df <- df[!(df$AQI == ""), ]
+df <- df[!(df$PM25SubIndex == ""), ]
+```
+
+```{r}
+library(plyr)
+ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
 ```
