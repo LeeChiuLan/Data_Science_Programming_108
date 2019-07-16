@@ -1,0 +1,36 @@
+---
+title: "AirPollution - ggplot"
+author: "Linda Lee"
+date: "2019/7/15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Subject
+
+
+```{r}
+library(dplyr)
+library(readxl)
+
+sitedata_raw<-read.csv("../../Datasets/空氣品質監測站Eng.csv", header=T, sep=",")
+
+AQIfile <- "../../Datasets/ATM00679_2019_0322_0430.xlsx"
+AQIdata_raw <- read_xlsx(AQIfile)
+head(AQIdata_raw)
+str(AQIdata_raw)
+
+#--------------- [DataSet] Site ---------------
+sitedata <- select(sitedata_raw, Name, Longitude,Latitude) %>%
+  rename(SiteName=Name)
+sitedata = sitedata[sitedata$SiteName != "",]    # remove empty row
+dim(sitedata)
+head(sitedata)
+
+#--------------- Merge DataSet ---------------
+AQIdata=merge(AQIdata_raw, sitedata, by.x="SiteName")
+head(AQIdata)
+```
