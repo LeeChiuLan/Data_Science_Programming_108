@@ -17,7 +17,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
   - [hw0](https://leechiulan.github.io/Data_Science_Programming_108/week1/part1/up_RmarkTest.html)
   - [hw1](https://leechiulan.github.io/Data_Science_Programming_108/week1/part2/AirPollution.html): tiny data:[AirPollution]
 - week 2
-  - [hw2](https://leechiulan.github.io/Data_Science_Programming_108/week2/part1/AirPollutionAQI.html)
+  - [hw2](https://leechiulan.github.io/Data_Science_Programming_108/week2/part1/AirPollutionAQI.html): ggplot:[AirPollution]
   - [hw3]
   
   
