@@ -66,7 +66,8 @@ df <- Xindian_data
 df <- df[!(df$AQI == ""), ]
 df <- df[!(df$PM25SubIndex == ""), ]
 ggplot(data = df, aes(x=MonitorDate, y= AQI)) + geom_line()
-ggplot(data = df, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
+ggplot(data = df, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black") + 
+  scale_fill_manual(values=c("red", "blue", "green"))
 
 library(plyr)
 df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI)%>%round(digits = 2), Rate_PM25=mean(PM25SubIndex)%>%round(digits = 2))

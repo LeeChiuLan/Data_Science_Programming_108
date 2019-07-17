@@ -47,10 +47,12 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 - week 1
   - 投影片 [資料科學課程簡介](https://docs.google.com/presentation/d/e/2PACX-1vRNotYqGl42khFyyjuiRYQ9cOOwNsBgGXgW-IBoIJDdiG6T2Adw2X-SO4dDGPhKqd7JlEb3ku9Hmn_7/pub?start=false&loop=false&delayms=3000)
   - 投影片 [資料收集與清洗](https://docs.google.com/presentation/d/e/2PACX-1vSx3-g4Z4LgimZKlKfk_L2gH00mDAyQo8DIugatiEXtCUI7hRNuxNtzzuobjLy-VadSpuohEsh4OeqK/pub?start=false&loop=false&delayms=3000)
+  - 投影片 [視覺化與EDA](https://docs.google.com/presentation/d/e/2PACX-1vTvdUOo9w0RFYs8NBIr7svtShHutVeipc9zAMFJN8Bq2LzVCwBpvEO5ChIfaoRjspZDAJSMbJOjWBL8/pub?start=false&loop=false&delayms=3000&slide=id.p)
   - [108 全國夏季學院 (7/8) Class 1](http://www.peculab.org/2019/07/03/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2%e8%aa%b2%e7%a8%8b%e5%85%a7%e5%ae%b9/)
   - [108 全國夏季學院 (7/11) Class 2](https://www.peculab.org/2019/07/10/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-11-class-2/)
-  - [108 全國夏季學院 (7/15) Class 3](https://docs.google.com/presentation/d/e/2PACX-1vTvdUOo9w0RFYs8NBIr7svtShHutVeipc9zAMFJN8Bq2LzVCwBpvEO5ChIfaoRjspZDAJSMbJOjWBL8/pub?start=false&loop=false&delayms=3000&slide=id.p)
+  - [108 全國夏季學院 (7/15) Class 3](http://www.peculab.org/2019/07/11/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-15-class-3/)
   
 ## Reference
+- [Cookbook for R ](http://www.cookbook-r.com/)
 - [王姿嵐-Data Science Programming](https://github.com/lanw868/Data-Science-Programming)
 - [韓國瑜 & 陳其邁 2018 年 9 月臉書資料文本分析](https://ntu-csx-datascience.github.io/1072-CSX4001-DataScience/CooccurrenceTextMining/TextMining.html?fbclid=IwAR1GYN5s7ki8oKE2hwLOIVf6ggNp7O4expF7fBANGnDohMHFNMF5m3BV-l8)

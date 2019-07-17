@@ -10,7 +10,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Subject
+我住在新北市新店區想知道這裡的空氣品質.
 
+## DataSet
+* [環保署 OpenData.epa](https://opendata.epa.gov.tw/Data/Contents/ATM00679/)
+    + 每日9:30PM擷取資料(+- :1 hour)
+    + 執行期間:2019/3/22 ~ 2019/4/30
+* [空氣品質監測站經緯度](https://erdb.epa.gov.tw/DataRepository/Facilities/AirQualityMonitorStations.aspx?topic1=%E8%A8%AD%E6%96%BD&topic2=%E5%A4%A7%E6%B0%A3&subject=%E6%B8%AC%E7%AB%99)
+
+## Comment/Conclusion
+透過數據視覺化,跟最近的鄰近測站比較,新店空氣品質是相對不錯的.
 
 ## R 開始
 ```{r}
@@ -112,7 +121,8 @@ ggplot(data = Xindian_data, aes(x=MonitorDate, y= AQI)) + geom_line()
 ```
 
 ```{r}
-ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar()
+ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
+  scale_fill_manual(values=c("red", "blue", "green"))
 ```
 
 ### 計算各星期的AQI, PM2.5平均值
@@ -170,6 +180,12 @@ ggplot(Xindian_data, aes(x=Weekday, y=PM25SubIndex)) + geom_boxplot() +
 ### 取得鄰近監測站資料,合併分析(僅對AQI及PM2.5)
 ```{r}
 nearNB.name <- Xindian_data$NearestSite %>% factor %>% levels
+nearNB.dist <- Xindian_data$NearestSiteDistm %>% factor %>% levels
+nearNB.name
+nearNB.dist
+```
+
+```{r}
 nearNB_data<-AQIdata%>%filter(SiteName==nearNB.name)
 
 new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSite)
