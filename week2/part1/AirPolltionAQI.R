@@ -67,8 +67,10 @@ df <- Xindian_data
 df <- df[!(df$AQI == ""), ]
 df <- df[!(df$PM25SubIndex == ""), ]
 ggplot(data = df, aes(x=MonitorDate, y= AQI)) + geom_line()
-ggplot(data = df, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black") + 
-  scale_fill_manual(values=c("red", "blue", "green"))
+
+color_group = c("red", "blue", "green")
+ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
+  scale_fill_manual(values=color_group)
 
 library(plyr)
 df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI)%>%round(digits = 2), Rate_PM25=mean(PM25SubIndex)%>%round(digits = 2))
@@ -98,10 +100,10 @@ ggplot(data = new_AQI, aes(x=Weekday, y= AQI), fill=SiteName) + geom_boxplot(aes
 
 library("gridExtra")
 p1 <- ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
-  scale_fill_manual(values=c("red", "blue", "green")) + 
+  scale_fill_manual(values=color_group) + 
   labs(title="Site:[Xindian]", caption="source: mpg")  
 p2 <- ggplot(data = nearNB_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
-  scale_fill_manual(values=c("red", "blue", "green")) +  
+  scale_fill_manual(values=color_group) +  
   labs(title="Site:[Guting]", caption="source: mpg")  
 grid.arrange(p1,p2)
 

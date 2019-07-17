@@ -121,8 +121,9 @@ ggplot(data = Xindian_data, aes(x=MonitorDate, y= AQI)) + geom_line()
 ```
 
 ```{r}
+color_group = c("red", "blue", "green")
 ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
-  scale_fill_manual(values=c("red", "blue", "green"))
+  scale_fill_manual(values=color_group)
 ```
 
 ### 計算各星期的AQI, PM2.5平均值
@@ -211,10 +212,10 @@ ggplot(data = new_AQI, aes(x=Weekday, y= AQI), fill=SiteName) + geom_boxplot(aes
 ```{r}
 library("gridExtra")
 p1 <- ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
-  scale_fill_manual(values=c("red", "blue", "green")) + 
+  scale_fill_manual(values=color_group) + 
   labs(title="Site:[Xindian]", caption="source: mpg")  
 p2 <- ggplot(data = nearNB_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
-  scale_fill_manual(values=c("red", "blue", "green")) +  
+  scale_fill_manual(values=color_group) +  
   labs(title="Site:[Guting]", caption="source: mpg")  
 grid.arrange(p1,p2)
 ```
