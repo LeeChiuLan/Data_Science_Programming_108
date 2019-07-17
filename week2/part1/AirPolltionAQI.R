@@ -81,6 +81,28 @@ g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=p
 new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,SiteId,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSiteDistm,NearestSite)
 head(new_AQI,-10)
 
+s <- ggplot(data = new_AQI, aes(x=MonitorDate,y=AQI, group=SiteName)) 
+s + geom_line(linetype="dashed", color="lightblue", size=1.2) + geom_point(color="red",size=3)
+
+ggplot(data = new_AQI, aes(x=MonitorDate, y= AQI)) + geom_line(aes(color=SiteName))+
+  theme(text=element_text(family="黑體-繁 中黑", size=14))
+
+ggplot(data = new_AQI, aes(x=MonitorDate, y= PM25SubIndex)) + geom_line(aes(color=SiteName))+
+  theme(text=element_text(family="黑體-繁 中黑", size=14)) + 
+  labs(title="PM2.5", caption="source: mpg")
+
+ggplot(data = new_AQI, aes(x=Weekday, y= AQI), fill=SiteName) + geom_boxplot(aes(color=SiteName))+
+  theme(text=element_text(family="黑體-繁 中黑", size=14))
+
+library("gridExtra")
+p1 <- ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
+  scale_fill_manual(values=c("red", "blue", "green")) + 
+  labs(title="Site:[Xindian]", caption="source: mpg")  
+p2 <- ggplot(data = nearNB_data, aes(x= Weekday, fill = Class)) + geom_bar() + 
+  scale_fill_manual(values=c("red", "blue", "green")) +  
+  labs(title="Site:[Guting]", caption="source: mpg")  
+grid.arrange(p1,p2)
+
 # function: isContained
 isContained <- function(r,Obj1, Obj2) {
   d <- getDistm(Obj1, Obj2)
