@@ -69,7 +69,7 @@ ggplot(data = df, aes(x=MonitorDate, y= AQI)) + geom_line()
 ggplot(data = df, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
 
 library(plyr)
-df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
+df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI)%>%round(digits = 2), Rate_PM25=mean(PM25SubIndex)%>%round(digits = 2))
 
 g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) + 
   geom_bar(stat="identity", width=.5, fill="tomato3") + 

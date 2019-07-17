@@ -127,7 +127,7 @@ df <- df[!(df$PM25SubIndex == ""), ]
 
 ```{r}
 library(plyr)
-df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI), Rate_PM25=mean(PM25SubIndex))
+df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI)%>%round(digits = 2), Rate_PM25=mean(PM25SubIndex)%>%round(digits = 2))
 print(df_AQI)
 ```
 
