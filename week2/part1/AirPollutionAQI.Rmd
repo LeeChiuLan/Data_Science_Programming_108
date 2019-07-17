@@ -188,7 +188,7 @@ nearNB.dist
 ```{r}
 nearNB_data<-AQIdata%>%filter(SiteName==nearNB.name)
 
-new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSite)
+new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSite,NearestSiteDistm)
 head(new_AQI,-10)
 ```
 

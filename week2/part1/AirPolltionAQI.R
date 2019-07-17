@@ -58,6 +58,7 @@ AQIdata$Weekday <- ordered(AQIdata$Weekday, levels=c("Mon", "Tue", "Wed", "Thu",
 
 Xindian_data<-AQIdata%>%filter(SiteName=="新店")
 nearNB.name <- Xindian_data$NearestSite %>% factor %>% levels
+nearNB.dist <- Xindian_data$NearestSiteDistm %>% factor %>% levels
 nearNB_data<-AQIdata%>%filter(SiteName==nearNB.name)
 
 
@@ -79,7 +80,7 @@ g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) +
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
 
-new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,SiteId,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSiteDistm,NearestSite)
+new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,SiteId,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSiteDistm,NearestSite,NearestSiteDistm)
 head(new_AQI,-10)
 
 s <- ggplot(data = new_AQI, aes(x=MonitorDate,y=AQI, group=SiteName)) 
