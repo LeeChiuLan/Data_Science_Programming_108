@@ -111,9 +111,8 @@ Xindian_data<-AQIdata%>%filter(SiteName=="新店")
 ggplot(data = Xindian_data, aes(x=MonitorDate, y= AQI)) + geom_line()
 ```
 
-
 ```{r}
-ggplot(data = Xindian_data, aes(x= Class)) + geom_bar(fill = "lightblue", colour="black")
+ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar()
 ```
 
 ### 計算各星期的AQI, PM2.5平均值
@@ -147,6 +146,10 @@ g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) +
 g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
 ```
 
+```{r}
+ggplot(Xindian_data, aes(x=Weekday, y=AQI)) +geom_boxplot()
+```
+
 #### 畫出各星期平均PM2.5值
 ```{r}
 g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_PM25, label = Rate_PM25)) + 
@@ -156,3 +159,21 @@ g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_PM25, label = Rate_PM25)) +
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 g + geom_text(aes(label = Rate_PM25),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
 ```
+
+```{r}
+ggplot(Xindian_data, aes(x=Weekday, y=PM25SubIndex)) + geom_boxplot() + 
+  labs(title="Site:[Xindian] PM2.5", caption="source: mpg")  
+```
+
+## 比對最近鄰近的[監測站]
+
+### 取得鄰近監測站資料,合併分析(僅對AQI及PM2.5)
+```{r}
+nearNB.name <- Xindian_data$NearestSite %>% factor %>% levels
+nearNB_data<-AQIdata%>%filter(SiteName==nearNB.name)
+
+new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSite)
+head(new_AQI,-10)
+```
+
+
