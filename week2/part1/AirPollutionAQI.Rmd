@@ -161,6 +161,20 @@ g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=p
 ggplot(Xindian_data, aes(x=Weekday, y=AQI)) +geom_boxplot()
 ```
 
+#### 盒鬚圖水平呈現的效果也不錯
+```{r}
+boxplot(AQI~Weekday,
+        data = Xindian_data,
+        main = "Boxplot for Site:[Xindian]",
+        xlab="AQI",
+        ylab="Weekday",
+        col="orange",
+        border="brown",
+        horizontal = TRUE,
+        notch = TRUE
+)
+```
+
 #### 畫出各星期平均PM2.5值
 ```{r}
 g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_PM25, label = Rate_PM25)) + 

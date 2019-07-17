@@ -74,6 +74,7 @@ ggplot(data = Xindian_data, aes(x= Weekday, fill = Class)) + geom_bar() +
 
 library(plyr)
 df_AQI <- ddply(df, .(Weekday), summarize,  Rate_AQI=mean(AQI)%>%round(digits = 2), Rate_PM25=mean(PM25SubIndex)%>%round(digits = 2))
+df_AQI <- df_AQI %>% na.omit()   # remove row with NA
 
 g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) + 
   geom_bar(stat="identity", width=.5, fill="tomato3") + 
@@ -81,6 +82,18 @@ g <- ggplot(df_AQI, aes(x=Weekday, y=Rate_AQI, label = Rate_AQI)) +
        caption="source: mpg") + 
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 g + geom_text(aes(label = Rate_AQI),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
+
+ggplot(Xindian_data, aes(x=Weekday, y=AQI)) +geom_boxplot()
+boxplot(AQI~Weekday,
+        data = Xindian_data,
+        main = "Boxplot for Site:[Xindian]",
+        xlab="AQI",
+        ylab="Weekday",
+        col="orange",
+        border="brown",
+        horizontal = TRUE,
+        notch = TRUE
+)
 
 new_AQI <- rbind(Xindian_data,nearNB_data) %>% select(SiteName,SiteId,MonitorDate,AQI,PM25SubIndex,Weekday,Class,NearestSiteDistm,NearestSite,NearestSiteDistm)
 head(new_AQI,-10)
