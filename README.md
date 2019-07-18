@@ -54,6 +54,7 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
   - [108 全國夏季學院 (7/15) Class 3](http://www.peculab.org/2019/07/11/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-15-class-3/)
   
 ## Reference
+- [資料科學- text mining 文字雲 --以自由時報體育版新聞為例](http://to52016.pixnet.net/blog/post/342915697-%5Br%5D-資料科學--text-mining-文字雲---以自由時報體)
 - [Cookbook for R ](http://www.cookbook-r.com/)
 - [王姿嵐-Data Science Programming](https://github.com/lanw868/Data-Science-Programming)
 - [韓國瑜 & 陳其邁 2018 年 9 月臉書資料文本分析](https://ntu-csx-datascience.github.io/1072-CSX4001-DataScience/CooccurrenceTextMining/TextMining.html?fbclid=IwAR1GYN5s7ki8oKE2hwLOIVf6ggNp7O4expF7fBANGnDohMHFNMF5m3BV-l8)
