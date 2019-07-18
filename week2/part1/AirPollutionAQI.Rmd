@@ -190,6 +190,19 @@ ggplot(Xindian_data, aes(x=Weekday, y=PM25SubIndex)) + geom_boxplot() +
   labs(title="Site:[Xindian] PM2.5", caption="source: mpg")  
 ```
 
+```{r}
+boxplot(PM25SubIndex~Weekday,
+        data = Xindian_data,
+        main = "Boxplot for Site:[Xindian]",
+        xlab="PM2.5",
+        ylab="Weekday",
+        col="orange",
+        border="brown",
+        horizontal = TRUE,
+        notch = TRUE
+)
+```
+
 ## 比對最近鄰近的[監測站]
 
 ### 取得鄰近監測站資料,合併分析(僅對AQI及PM2.5)
