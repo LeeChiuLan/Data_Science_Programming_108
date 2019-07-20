@@ -26,5 +26,6 @@ for(i in 2:rank){
   theUrl <- html_attr(block,"href")
   df <- data.frame("title"=title,"URL"=theUrl) %>% rbind(df)
 }
-df
+
+View(df)
 
