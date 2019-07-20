@@ -1,11 +1,32 @@
+---
+title: "BlogsMedical_F"
+author: "Linda Lee"
+date: "2019/7/20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Import library
+```{r}
 library(dplyr)
 library(xml2)
 library(rvest)
 library(wordcloud)
 library(stringr)
+```
 
+### Read the top web page 
+```{r}
 page_prefix <- "https://www.pixnet.net/blog/articles/category/33"
+```
 
+### Functions
+
+#### findLastPage()
+```{r}
 findLastPage <- function(urlpath){
   full_page <- read_html(urlpath)
   nav_nodes <- html_node(full_page,".page") %>% html_nodes("a")
@@ -25,7 +46,10 @@ findLastPage <- function(urlpath){
   
   return(ret)
 }
+```
 
+#### df_page()
+```{r}
 df_page <- function(urlpath){
   full_page <- read_html(urlpath)
   all_nodes<- html_node(full_page,xpath="/html/body")
@@ -49,9 +73,15 @@ df_page <- function(urlpath){
 
   return(df)
 }
+```
 
+### Verify
+```{r}
 lastPageID <- findLastPage(page_prefix)
 lastPageID
+```
 
+```{r}
 data <- df_page(page_prefix)
 data
+```

@@ -15,6 +15,7 @@ library(dplyr)
 library(xml2)
 library(rvest)
 library(wordcloud)
+library(stringr)
 ```
 
 ### Read the top web page 
