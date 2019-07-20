@@ -83,5 +83,5 @@ lastPageID
 
 ```{r}
 data <- df_page(page_prefix)
-data
+head(data)
 ```

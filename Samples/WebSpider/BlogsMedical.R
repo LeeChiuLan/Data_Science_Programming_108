@@ -54,4 +54,4 @@ lastPageID <- findLastPage(page_prefix)
 lastPageID
 
 data <- df_page(page_prefix)
-data
+head(data)
