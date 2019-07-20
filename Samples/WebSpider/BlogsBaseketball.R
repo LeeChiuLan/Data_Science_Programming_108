@@ -45,6 +45,3 @@ wordcloud(raw_data$itemName, raw_data$Freq,
           min.freq = 1, max.words=200, scale=c(4,.2),
           random.order=FALSE, colors=brewer.pal(5,"Dark2"))
 
-### 新增字典
-dic = c("HBL")
-new_user_word(cutter,dic)
