@@ -1,0 +1,524 @@
+
+<!DOCTYPE html><html
+lang=""><head><title>醫療保健 @ 文章 :: 部落格首頁 :: 痞客邦 PIXNET ::</title><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta
+http-equiv="X-UA-Compatible" content="IE=edge"><meta
+name="keywords" content="部落格,網誌,PIXNET,痞客邦,痞客幫,痞克邦,痞克幫,痞客,痞克,相簿,免費,影音,Blog"><link
+rel="manifest" href="/manifest.json"><meta
+name="description" content="最豐富最多樣內容,集合網友嘔心瀝血之作,點閱率居高不下,偶像名人也紛紛加入這股痞客邦 PIXNET 風潮,你也可以創造一個個人專屬創作的天地"><link
+rel="stylesheet" href="//mainpage.pixfs.net/blog2012/style/construction.min.css?v=0266dd05e17bbf7c416a3f8d18c94d38" type="text/css"><link
+rel="stylesheet" href="//mainpage.pixfs.net/blog2012/style/blog.min.css?v=0266dd05e17bbf7c416a3f8d18c94d38" type="text/css"><link
+rel="stylesheet" href="//front.pixfs.net/module/topbar/css/blogtopbar.min.css?v=0266dd05e17bbf7c416a3f8d18c94d38"><link
+rel="stylesheet" href="//mainpage.pixfs.net/index/style/new-navigation.min.css?v=0266dd05e17bbf7c416a3f8d18c94d38" type="text/css"><link
+rel="stylesheet" href="//s.pixfs.net/f.pixnet.net/css/iframe-popup.css?v=0266dd05e17bbf7c416a3f8d18c94d38" type="text/css"><link
+rel="stylesheet" href="//mainpage.pixfs.net/style/popup.css?v=0266dd05e17bbf7c416a3f8d18c94d38" type="text/css"><link
+rel="search" type="application/opensearchdescription+xml" href="//mainpage.pixfs.net/blog/opensearch.xml" title="PIXNET" /><link
+rel="shortcut icon" href="/favicon.ico"> <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <script type="text/javascript">var pix=pix||{};pix.apisite='api.pixnet.cc';pix.login_name='4d88d353f0d45ed6ddd0ccd81bd4a80f';pix.server_name='www.pixnet.net';pix.visitor="";pix.openid="";pix.member_uniqid="";pix.demo_ad_no=0;pix.demo_ad_sig=null;pix.checklogin_version=2;pix.nocache=0;</script> <script src="https://member.pixnet.cc/api/checklogin.php?js=1&amp;unique=1461625362&amp;timestamp=1563589269&amp;type=3" type="text/javascript"></script> <script src="https://s.pixfs.net/js/pixnet/checklogin.min.js?v=0266dd05e17bbf7c416a3f8d18c94d38" type="text/javascript"></script><script type="text/javascript" src="//libs.pixfs.net/jquery.templates/beta1/jquery.tmpl.min.js"></script> <script type="text/javascript" src="//libs.pixfs.net/swfobject/1.5/swfobject.js"></script> <script type="text/javascript" src="//s.pixfs.net/js/pix.min.js?v=0266dd05e17bbf7c416a3f8d18c94d38"></script> <script type="text/javascript" src="//mainpage.pixfs.net/js/mainpage.min.js?v=0266dd05e17bbf7c416a3f8d18c94d38"></script> <script type="text/javascript" src="//s.pixfs.net/ad/js/ad.min.js?v=0266dd05e17bbf7c416a3f8d18c94d38"></script> <script type="text/javascript" src="//s.pixfs.net/channel/js/bookmark.min.js?v=0266dd05e17bbf7c416a3f8d18c94d38"></script> </head><body > <script type="text/javascript">_atrk_opts={atrk_acct:"H00Mh1aIE700wg",domain:"pixnet.net",dynamic:true};(function(){var as=document.createElement('script');as.type='text/javascript';as.async=true;as.src="https://d31qbv1cthcecs.cloudfront.net/atrk.js";var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as,s);})();</script> <noscript><img
+src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=H00Mh1aIE700wg" style="display:none" height="1" width="1" alt="" /></noscript><div
+id="navigation-wapper"><div
+id="new-navigation"><ul
+id="nav-bar"><li
+class="tab mainpage "><a
+id="new-nav-mainpage" href="https://www.pixnet.net"><span>首頁</span></a></li><li
+class="tab blog active"><a
+id="new-nav-blog" href="https://www.pixnet.net/blog"><span>部落格</span></a></li><li
+class="tab streamtopic-web">
+<a
+class="tab-link" id="new-nav-streamtopic-tab" href="https://streamtopic.pixnet.net/?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_streamtopic"><span>邦邦</span></a></li><li
+class="tab beauty-group ">
+<a
+class="tab-link" id="new-nav-makeup-tab" href="https://styleme.pixnet.net/home?utm_source=pixnet&utm_medium=home_navbar&utm_campaign=pixnet_to_home"><span>PIXstyleMe</span></a></li><li
+class="tab tech3c ">
+<a
+class="tab-link" id="new-nav-tech3c-tab" href="https://tech3c.pixnet.net/?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_tech3c"><span>3C</span></a></li><li
+class="tab movie ">
+<a
+class="tab-link" id="new-nav-movie-tab" href="https://movie.pixnet.net/category/19?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_movie"><span>電影</span></a></li><li
+class="tab travel ">
+<a
+class="tab-link" id="new-nav-travel-tab" href="https://travel.pixnet.net/?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_travel"><span>旅遊</span></a></li><li
+class="tab family ">
+<a
+class="tab-link" id="new-nav-family-tab" href="https://family.pixnet.net/?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_family"><span>親子</span></a></li><li
+class="tab food ">
+<a
+class="tab-link" id="new-nav-food-tab" href="https://food.pixnet.net/?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_food"><span>美食</span></a></li><li
+class="tab game ">
+<a
+class="tab-link" id="new-nav-food-tab" href="https://game.pixnet.net/?utm_source=PIXNET-index&utm_medium=desktop&utm_campaign=TOPBAR_to_game"><span>遊戲</span></a></li><li
+class="tab goods more-channel more-channel--pixgoods ">
+<span
+id="new-nav-goods-tab">PIXgoods</span><ul
+class="nav-channel-list"><li
+class="service"><a
+href="https://pixgoods.pixnet.net/?utm_source=PIXNET-index-desktop&
+utm_medium=TOP%20BAR&utm_campaign=PIXgoods-index"><span>找好物</span></a></li><li
+class="service"><a
+href="https://ishapon.events.pixnet.net/?utm_source=PIXNET-index-desktop&
+utm_medium=TOP%20BAR&utm_campaign=dingyummy-index"><span>訂好位</span></a></li></ul></li><li
+class="tab more-channel"><a
+id="new-nav-more-tab" href="#"><span>更多</span></a><ul
+class="nav-channel-list"><li
+class="service"><a
+id="new-nav-sport" href="https://channel.pixnet.net/sport"><span>運動邦</span></a></li><li
+class="service"><a
+id="new-nav-blogranking" href="https://blogranking.events.pixnet.net/"><span>社群影響力</span></a></li><li
+class="service"><a
+id="new-nav-appmarket" href="http://appmarket.pixnet.tw"><span>應用市集</span></a></li><li
+class="service"><a
+id="new-nav-mobile" href="http://www.pixnet.net/mobile"><span>手機APPS</span></a></li><li
+class="service"><a
+id="new-nav-admin-blog" href="http://admin.pixnet.net/blog"><span>站方公告</span></a></li><li
+class="service"><a
+id="new-nav-events" href="http://channel.pixnet.net/events"><span>好康活動</span></a></li><li
+class="service"><a
+id="new-nav-help" href="http://help.pixnet.tw"><span>客服中心</span></a></li><li
+class="service"><a
+id="new-nav-inpo" href="http://inpo.pixnet.net/blog"><span>公益家</span></a></li><li
+class="service"><a
+id="new-nav-pixinsight" href="//www.pixinsight.com.tw/"><span>PIXinsight</span></a></li></ul></li></ul><div
+class="topbar__nav"><div
+class="topbar__search-container"><div
+class="topbar__search__toggle-btn"></div><form
+class="topbar__search" id="topbar__search" action="//www.pixnet.net/searcharticle" target="_search">
+<input
+type="text" name="q" class="topbar__search__input topbar__search__input--large topbar__search__input--no-icon" id="topbar__search__input" placeholder="哈囉～你今天想搜尋什麼關鍵字呢？" value="" maxlength="32" tabindex="1" autocomplete="off">
+<button
+type="reset" class="topbar__search__reset">×</button><div
+class="topbar__search__btns topbar__search__btns--large">
+<button
+class="topbar__search__submit" name="search" type="submit" title="找文章" value="searcharticle" tabindex="2" data-counterlink="//counter.pixplug.in/count.php?timestamp=1563589269&random=632172420&check=3960292035&no_timeout=1&data[counter]=%7B%22tag_id%22%3A30%2C%22id%22%3A%22search-articles-click%22%2C%22no_timeout%22%3Atrue%7D">找文章</button>
+<button
+class="topbar__search__submit" name="search" type="submit" title="找部落客" value="searchblog" tabindex="3" data-counterlink="//counter.pixplug.in/count.php?timestamp=1563589269&random=4046730347&check=3028646340&no_timeout=1&data[counter]=%7B%22tag_id%22%3A30%2C%22id%22%3A%22search-bloggers-click%22%2C%22no_timeout%22%3Atrue%7D">找部落客</button></div><ul
+class="topbar__search__suggestion"></ul></form></div><div
+class="topbar__user">
+<a
+class="topbar__user__login" id="topbar__user__login" href="https://panel.pixnet.cc/login/openid?done=https%3A%2F%2Fwww.pixnet.net%2Fblog%2Farticles%2Fcategory%2F33&amp;openid=https%3A%2F%2Fmember.pixnet.cc%2Flogin&amp;easy_login=1&amp;from_service=Blog">登入</a></div></div> <script src="//front.pixfs.net/module/topbar/js/blogtopbar.min.js" defer></script> </div></div><div
+style="display:none;"></div><div
+id="container1"><div
+id="container2"><div
+id="container3"><div
+id="header"><h1 id="logo"><a
+href="/blog"><span>痞客邦 PIXNET-部落格首頁</span></a></h1><ul
+id="navigation"><li
+class=" first"><a
+href="/blog">首頁</a></li><li>
+<a
+href="/blog/articles/group/1">娛樂</a><ul><li><a
+href="/blog/articles/category/31">視聽娛樂</a></li><li><a
+href="/blog/articles/category/30">偶像明星</a></li><li><a
+href="/blog/articles/category/19">電影評論</a></li><li><a
+href="/blog/articles/category/18">音樂評析</a></li></ul></li><li>
+<a
+href="/blog/articles/group/2">旅遊</a><ul><li><a
+href="/blog/articles/category/28">國內旅遊</a></li><li><a
+href="/blog/articles/category/29">國外旅遊</a></li></ul></li><li>
+<a
+href="/blog/articles/group/3">美食</a><ul><li><a
+href="/blog/articles/category/26">美味食記</a></li><li><a
+href="/blog/articles/category/27">食譜分享</a></li></ul></li><li>
+<a
+href="/blog/articles/group/4">流行</a><ul><li><a
+href="/blog/articles/category/22">時尚流行</a></li><li><a
+href="/blog/articles/category/23">美容彩妝</a></li></ul></li><li
+class="active">
+<a
+href="/blog/articles/group/5">家庭</a><ul><li><a
+href="/blog/articles/category/6">親子育兒</a></li><li><a
+href="/blog/articles/category/3">寵物日記</a></li><li><a
+href="/blog/articles/category/4">結婚紀錄</a></li><li><a
+href="/blog/articles/category/33">醫療保健</a></li></ul></li><li>
+<a
+href="/blog/articles/group/6">命理</a><ul><li><a
+href="/blog/articles/category/34">星座算命</a></li><li><a
+href="/blog/articles/category/35">心理測驗</a></li><li><a
+href="/blog/articles/category/41">宗教超自然</a></li></ul></li><li>
+<a
+href="/blog/articles/group/7">圖文</a><ul><li><a
+href="/blog/articles/category/11">漫畫塗鴉</a></li><li><a
+href="/blog/articles/category/10">圖文創作</a></li></ul></li><li>
+<a
+href="/blog/articles/group/8">設計</a><ul><li><a
+href="/blog/articles/category/16">視覺設計</a></li><li><a
+href="/blog/articles/category/43">裝潢設計</a></li></ul></li><li>
+<a
+href="/blog/articles/group/9">藝文</a><ul><li><a
+href="/blog/articles/category/13">小說連載</a></li><li><a
+href="/blog/articles/category/14">散文筆記</a></li><li><a
+href="/blog/articles/category/17">藝文評論</a></li></ul></li><li>
+<a
+href="/blog/articles/group/10">3C</a><ul><li><a
+href="/blog/articles/category/24">數位生活</a></li><li><a
+href="/blog/articles/category/15">攝影寫真</a></li><li><a
+href="/blog/articles/category/21">電玩動漫</a></li><li><a
+href="/blog/articles/category/42">汽機車</a></li></ul></li><li>
+<a
+href="/blog/articles/group/11">運動</a><ul><li><a
+href="/blog/articles/category/32">運動體育</a></li><li><a
+href="/blog/articles/category/44">活動紀錄</a></li></ul></li><li>
+<a
+href="/blog/articles/group/12">政經</a><ul><li><a
+href="/blog/articles/category/36">財經企管</a></li><li><a
+href="/blog/articles/category/38">政論人文</a></li></ul></li><li>
+<a
+href="/blog/articles/group/13">生活</a><ul><li><a
+href="/blog/articles/category/20">收藏嗜好</a></li><li><a
+href="/blog/articles/category/5">生活綜合</a></li><li><a
+href="/blog/articles/category/12">KUSO</a></li></ul></li><li>
+<a
+href="/blog/articles/group/14">心情</a><ul><li><a
+href="/blog/articles/category/1">戀愛情事</a></li><li><a
+href="/blog/articles/category/2">心情日記</a></li></ul></li><li>
+<a
+href="/blog/articles/group/15">學習</a><ul><li><a
+href="/blog/articles/category/9">職場甘苦</a></li><li><a
+href="/blog/articles/category/7">校園生活</a></li><li><a
+href="/blog/articles/category/8">進修深造</a></li></ul></li></ul><div
+id="search"><form
+method="GET" action="/searcharticle">
+<input
+class="search-input" name="q" placeholder="輸入關鍵字">
+<input
+class="search-send" type="submit" value="送出"></form><div
+class="hot-tag"><span>熱門：</span>
+<a
+href="//www.pixnet.net/searcharticle?q=%E5%B0%8F%E7%90%89%E7%90%83">小琉球</a>,<a
+href="//www.pixnet.net/searcharticle?q=%E6%B0%B8%E5%BA%B7%E8%A1%97%E7%BE%8E%E9%A3%9F">永康街美食</a>,<a
+href="//www.pixnet.net/searcharticle?q=JIATE">JIATE</a>,<a
+href="//www.pixnet.net/searcharticle?q=%E6%B2%96%E7%B9%A9%E8%87%AA%E7%94%B1%E8%A1%8C">沖繩自由行</a></div></div><div
+id="ad-corner"><ins
+class="adsbyfalcon" data-ad-client="1" data-ad-slot="234" data-embed="false" style="display:inline-block;"></ins></div><ul
+id="info-textads">
+<ins
+class="adsbyfalcon" data-ad-client="1" data-ad-slot="323" data-embed="false" style="display:inline-block;"></ins><ins
+class="adsbyfalcon" data-ad-client="1" data-ad-slot="325" data-embed="false" style="display:inline-block;"></ins><ins
+class="adsbyfalcon" data-ad-client="1" data-ad-slot="327" data-embed="false" style="display:inline-block;"></ins><ins
+class="adsbyfalcon" data-ad-client="1" data-ad-slot="530" data-embed="false" style="display:inline-block;"></ins></ul><ul
+id="fox"><li><a
+href="http://ad.pixnet.net/newdirect.php?aid=0" id="fox-link1" class="fox-link" target="_blank"></a></li><li><a
+href="http://ad.pixnet.net/newdirect.php?aid=0" id="fox-link2" class="fox-link" target="_blank"></a></li><li><a
+href="http://ad.pixnet.net/newdirect.php?aid=0" id="fox-link3" class="fox-link" target="_blank"></a></li><li><a
+href="http://ad.pixnet.net/newdirect.php?aid=0" id="fox-link4" class="fox-link" target="_blank"></a></li></ul></div><div
+id="main"><div
+class="ad" id="ad-main"></div>
+<div id="content">
+<div class="content-box" id="articles">
+<div class="box-header"><h2>家庭文章</h2>
+<ul class="list-tabs">
+<li><a href="/blog/articles/group/5">所有家庭</a></li>
+<li><a href="/blog/articles/category/6">親子育兒</a></li>
+<li><a href="/blog/articles/category/3">寵物日記</a></li>
+<li><a href="/blog/articles/category/4">結婚紀錄</a></li>
+<li class="active"><a href="/blog/articles/category/33">醫療保健</a></li>
+</ul>
+<div class="list-function">
+<ul class="list-filters">
+<li class="active"><a href="/blog/articles/category/33/hot">本日熱門</a></li>
+<li><a href="/blog/articles/category/33/new">最新文章</a></li>
+<li><a href="/blog/articles/category/33/latest">近期熱門</a></li>
+</ul>
+
+</div></div>
+
+<div class="box-body">
+<div class="featured no-image">
+
+<span class="rank-1">冠軍</span>
+<h3><a
+href="https://c91339.pixnet.net/blog/post/15967917-%e5%a5%b3%e4%ba%ba%e5%9c%a8%e5%81%9a%e6%84%9b%e6%99%82%e9%99%b0%e9%81%93%e8%a3%8f%e7%9a%84%e6%84%9f%e8%a6%ba" target="_blank" title="女人在做愛時陰道裏的感覺">女人在做愛時陰道裏的感覺</a></h3>
+<p>很多已經有了性經驗的女人，還是說不清楚做愛時陰道裏到底是什麼感覺。這種只可意會不可言... (<a
+href="https://c91339.pixnet.net/blog/post/15967917-%e5%a5%b3%e4%ba%ba%e5%9c%a8%e5%81%9a%e6%84%9b%e6%99%82%e9%99%b0%e9%81%93%e8%a3%8f%e7%9a%84%e6%84%9f%e8%a6%ba" target="_blank">繼續閱讀 </a>)</p>
+
+<span class="meta"><a
+href="https://www.pixnet.net/pcard/c91339?utm_source=PIXNET&utm_medium=blog_category&utm_content=33"><img
+src="https://s3.pimg.tw/avatar/c91339/0/0/zoomcrop/40x40.png?v=1538102303" class="avatar" width="40" height="40" alt="Minnie00" title="Minnie00"></a><a
+href="https://www.pixnet.net/pcard/c91339?utm_source=PIXNET&utm_medium=blog_category&utm_content=33" class="author">Minnie00</a><span
+class="publish">發表於 2017.07.04 |  <a
+href="https://c91339.pixnet.net/blog/post/15967917-%e5%a5%b3%e4%ba%ba%e5%9c%a8%e5%81%9a%e6%84%9b%e6%99%82%e9%99%b0%e9%81%93%e8%a3%8f%e7%9a%84%e6%84%9f%e8%a6%ba#comments" target="_blank" class="comment">留言 (4)</a></span></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=c91339&amp;articleid=15967917&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></div>`<div
+class="ad" id="ad-content-1" style="height: 90px"></div>
+
+<ol class="article-list">
+<li class="rank-2">
+<span class="rank">2</span>
+<a
+href="https://wewe333we.pixnet.net/blog/post/227896079-%e4%bf%9d%e9%9a%aa%e5%85%ac%e5%8f%b8%e5%80%92%e9%96%89%e6%80%8e%e9%ba%bc%e8%be%a6%ef%bc%9f%e6%b2%92%e9%97%9c%e4%bf%82%ef%bc%8c%e9%80%99%e7%af%87%e6%95%99%e4%bd%a0%e6%80%8e%e9%ba%bc" target="_blank"><img
+class="thumb" src="https://s8.pimg.tw/album/wewe333we/element/248793538_1563430124-45194904/zoomcrop/90x90.png" width="90" height="90"></a>
+<h3><a
+href="https://wewe333we.pixnet.net/blog/post/227896079-%e4%bf%9d%e9%9a%aa%e5%85%ac%e5%8f%b8%e5%80%92%e9%96%89%e6%80%8e%e9%ba%bc%e8%be%a6%ef%bc%9f%e6%b2%92%e9%97%9c%e4%bf%82%ef%bc%8c%e9%80%99%e7%af%87%e6%95%99%e4%bd%a0%e6%80%8e%e9%ba%bc" target="_blank">保險公司倒閉怎麼辦？沒關係，這篇教你怎麼看</a>
+</h3>
+<p>「保險公司要是倒閉了怎麼辦啊？」很多人一定有這個疑問。   目前網路上的資訊太過複雜，導致許多人無法清楚的理解保險公司倒閉是怎麼一回事。 於... (<a
+href="https://wewe333we.pixnet.net/blog/post/227896079-%e4%bf%9d%e9%9a%aa%e5%85%ac%e5%8f%b8%e5%80%92%e9%96%89%e6%80%8e%e9%ba%bc%e8%be%a6%ef%bc%9f%e6%b2%92%e9%97%9c%e4%bf%82%ef%bc%8c%e9%80%99%e7%af%87%e6%95%99%e4%bd%a0%e6%80%8e%e9%ba%bc" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/wewe333we?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s3.pimg.tw/avatar/wewe333we/0/0/zoomcrop/24x24.png?v=1557130939" class="avatar" width="24" height="24" alt="林政華（大仁）" title="林政華（大仁）">林政華（大仁）</a>  發表於 2019.07.18 |  <a
+href="https://wewe333we.pixnet.net/blog/post/227896079-%e4%bf%9d%e9%9a%aa%e5%85%ac%e5%8f%b8%e5%80%92%e9%96%89%e6%80%8e%e9%ba%bc%e8%be%a6%ef%bc%9f%e6%b2%92%e9%97%9c%e4%bf%82%ef%bc%8c%e9%80%99%e7%af%87%e6%95%99%e4%bd%a0%e6%80%8e%e9%ba%bc#comments" target="_blank" class="comment">留言 (0)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=wewe333we&amp;articleid=227896079&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe>
+</li>
+
+<li class="rank-3">
+<span class="rank">3</span>
+<a
+href="https://hannn246.pixnet.net/blog/post/403981760-%e3%80%90%e9%9a%b1%e9%81%a9%e7%be%8e%e7%89%99%e5%a5%97%e6%97%a5%e8%a8%9813%e3%80%91%e9%bb%8f%e8%b1%86%e8%b1%86%e6%8b%89%e6%a9%a1%e7%9a%ae%e7%ad%8b%ef%bc%8c%e5%be%ae%e8%8b%a6" target="_blank"><img
+class="thumb" src="https://s1.pimg.tw/album/hannn246/element/730367121_1558890084-807445862/zoomcrop/90x90.jpg" width="90" height="90"></a>
+<h3><a
+href="https://hannn246.pixnet.net/blog/post/403981760-%e3%80%90%e9%9a%b1%e9%81%a9%e7%be%8e%e7%89%99%e5%a5%97%e6%97%a5%e8%a8%9813%e3%80%91%e9%bb%8f%e8%b1%86%e8%b1%86%e6%8b%89%e6%a9%a1%e7%9a%ae%e7%ad%8b%ef%bc%8c%e5%be%ae%e8%8b%a6" target="_blank">【隱適美牙套日記13】黏豆豆拉橡皮筋，微苦難日子來臨～</a>
+</h3>
+<p>//【隱適美牙套日記13】黏豆豆拉橡皮筋，微苦難日子來臨～// 上個月因為太忙了少更新一篇，這篇一併把進度補上喔！ 如果說我前期牙套戴得滿舒服的... (<a
+href="https://hannn246.pixnet.net/blog/post/403981760-%e3%80%90%e9%9a%b1%e9%81%a9%e7%be%8e%e7%89%99%e5%a5%97%e6%97%a5%e8%a8%9813%e3%80%91%e9%bb%8f%e8%b1%86%e8%b1%86%e6%8b%89%e6%a9%a1%e7%9a%ae%e7%ad%8b%ef%bc%8c%e5%be%ae%e8%8b%a6" target="_blank">繼續閱讀 </a>)</p>
+
+<span class="meta"><a
+href="https://www.pixnet.net/pcard/hannn246?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s9.pimg.tw/avatar/hannn246/0/0/zoomcrop/24x24.png?v=1554057567" class="avatar" width="24" height="24" alt="Amigo H." title="Amigo H.">Amigo H.</a>  發表於 2019.07.01 |  <a
+href="https://hannn246.pixnet.net/blog/post/403981760-%e3%80%90%e9%9a%b1%e9%81%a9%e7%be%8e%e7%89%99%e5%a5%97%e6%97%a5%e8%a8%9813%e3%80%91%e9%bb%8f%e8%b1%86%e8%b1%86%e6%8b%89%e6%a9%a1%e7%9a%ae%e7%ad%8b%ef%bc%8c%e5%be%ae%e8%8b%a6#comments" target="_blank" class="comment">留言 (0)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=hannn246&amp;articleid=403981760&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li>
+
+<li class="rank-4">
+<a
+href="https://cheers090.pixnet.net/blog/post/345156424-%e9%9b%85%e5%81%b2%e7%89%99%e9%86%ab%e5%86%b7%e5%85%89%e7%be%8e%e7%99%bd%e9%ab%94%e9%a9%97%ef%bc%8c%e8%ae%93%e5%a4%a7%e5%ae%b6%e9%83%bd%e7%be%a8%e6%85%95%e7%9a%84%e4%b8%80%e5%8f%a3" target="_blank"><img
+class="thumb" src="https://s1.pimg.tw/album/cheers090/element/725733331_1548752404-2999930592/zoomcrop/90x90.jpg" width="90" height="90"></a>
+<h3><a
+href="https://cheers090.pixnet.net/blog/post/345156424-%e9%9b%85%e5%81%b2%e7%89%99%e9%86%ab%e5%86%b7%e5%85%89%e7%be%8e%e7%99%bd%e9%ab%94%e9%a9%97%ef%bc%8c%e8%ae%93%e5%a4%a7%e5%ae%b6%e9%83%bd%e7%be%a8%e6%85%95%e7%9a%84%e4%b8%80%e5%8f%a3" target="_blank">雅偲牙醫冷光美白體驗，讓大家都羨慕的一口美牙- cheers090牙齒美白</a>
+</h3>
+<p>2018.11.8　更新：     事隔一年，我又來雅偲牙醫報到了  這天早上先跟艾咪去台北時裝週 Taipei in Style 去拍照看展  笑起來牙齒也蠻白的，可能是... (
+<a
+href="https://cheers090.pixnet.net/blog/post/345156424-%e9%9b%85%e5%81%b2%e7%89%99%e9%86%ab%e5%86%b7%e5%85%89%e7%be%8e%e7%99%bd%e9%ab%94%e9%a9%97%ef%bc%8c%e8%ae%93%e5%a4%a7%e5%ae%b6%e9%83%bd%e7%be%a8%e6%85%95%e7%9a%84%e4%b8%80%e5%8f%a3" target="_blank">繼續閱讀 </a>)
+</p>
+
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/cheers090?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s.pimg.tw/avatar/cheers090/0/0/zoomcrop/24x24.png?v=1476765509" class="avatar" width="24" height="24" alt="cheers090" title="cheers090">cheers090</a>  發表於 2017.12.18 |  <a
+href="https://cheers090.pixnet.net/blog/post/345156424-%e9%9b%85%e5%81%b2%e7%89%99%e9%86%ab%e5%86%b7%e5%85%89%e7%be%8e%e7%99%bd%e9%ab%94%e9%a9%97%ef%bc%8c%e8%ae%93%e5%a4%a7%e5%ae%b6%e9%83%bd%e7%be%a8%e6%85%95%e7%9a%84%e4%b8%80%e5%8f%a3#comments" target="_blank" class="comment">留言 (1)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=cheers090&amp;articleid=345156424&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe>
+</li>
+
+<li
+class="rank-5">
+<a
+href="https://leoc012345.pixnet.net/blog/post/273806408" target="_blank"><img
+class="thumb" src="https://s9.pimg.tw/album/leoc012345/element/155598599_1548550773-442873360/zoomcrop/90x90.jpg" width="90" height="90"></a><h3><a
+href="https://leoc012345.pixnet.net/blog/post/273806408" target="_blank">防褥瘡氣墊床是什麼? 跟露營或病床有甚麼關係呢? 推薦  !!</a></h3><p>~~~醫療用防褥瘡氣墊床~~~  有別於露營用氣墊床是單一充氣通常尺寸為雙人床，  防褥瘡氣墊床是專門設計給長期臥床或無法自行翻身起臥的患者者喔喔... (<a
+href="https://leoc012345.pixnet.net/blog/post/273806408" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/leoc012345?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s8.pimg.tw/avatar/leoc012345/0/0/zoomcrop/24x24.png?v=1548548431" class="avatar" width="24" height="24" alt="馬斯特" title="馬斯特">馬斯特</a>  發表於 2019.01.27 |  <a
+href="https://leoc012345.pixnet.net/blog/post/273806408#comments" target="_blank" class="comment">留言 (1)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=leoc012345&amp;articleid=273806408&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li><li
+class="rank-6">
+<a
+href="https://b303094004.pixnet.net/blog/post/157485771" target="_blank"><img
+class="thumb" src="https://s3.pimg.tw/album/b303094004/element/533276173_1405759757-1896105054/zoomcrop/90x90.jpg" width="90" height="90"></a><h3><a
+href="https://b303094004.pixnet.net/blog/post/157485771" target="_blank">類固醇藥膏強度分級</a></h3><p>外用類固醇就像雙面刃，適點正確的使用可以改善許多皮膚問題，但過度濫用卻容易造成皮膚變薄、微血管擴張、粉刺、多毛症等問題。但問題是，我們如... (<a
+href="https://b303094004.pixnet.net/blog/post/157485771" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/b303094004?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s8.pimg.tw/avatar/b303094004/0/0/zoomcrop/24x24.png?v=1431950153" class="avatar" width="24" height="24" alt="微笑藥師網" title="微笑藥師網">微笑藥師網</a>  發表於 2014.07.22 |  <a
+href="https://b303094004.pixnet.net/blog/post/157485771#comments" target="_blank" class="comment">留言 (138)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=b303094004&amp;articleid=157485771&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li><li
+class="rank-7">
+<a
+href="https://ifbook.pixnet.net/blog/post/202189153" target="_blank"><img
+class="thumb" src="https://s5.pimg.tw/album/ifbook/element/199368765_1439457522-2512637140/zoomcrop/90x90.jpg" width="90" height="90"></a><h3><a
+href="https://ifbook.pixnet.net/blog/post/202189153" target="_blank">【1分鐘救命關鍵】肚子痛怎麼辦？先依腹痛的位置區分原因！</a></h3><p>※本篇討論的腹痛，限定成人、不是因為外傷產生的腹痛。不會表達的老人或是小朋友的腹痛，因為表達能力和語彙的限制，更加需要醫師完整的評估，來確... (<a
+href="https://ifbook.pixnet.net/blog/post/202189153" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/ifbook?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s4.pimg.tw/avatar/ifbook/0/0/zoomcrop/24x24.png?v=1329381948" class="avatar" width="24" height="24" alt="創意市集 出版" title="創意市集 出版">創意市集 出版</a>  發表於 2015.08.13 |  <a
+href="https://ifbook.pixnet.net/blog/post/202189153#comments" target="_blank" class="comment">留言 (26)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=ifbook&amp;articleid=202189153&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li><li
+class="rank-8">
+<a
+href="https://vitagrace.pixnet.net/blog/post/463532384-%e4%b8%83%e6%8b%9b%e3%80%90%e5%a4%a9%e7%84%b6%e5%8a%a9%e7%9c%a0%e6%b3%95-%e4%b8%80%e8%a6%ba%e5%88%b0%e5%a4%a9%e4%ba%ae%e3%80%91" target="_blank"><img
+class="thumb" src="https://imageproxy.pimg.tw/zoomcrop?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FBX9kscXNOJ4%2Fmaxresdefault.jpg&width=90&height=90" width="90" height="90"></a><h3><a
+href="https://vitagrace.pixnet.net/blog/post/463532384-%e4%b8%83%e6%8b%9b%e3%80%90%e5%a4%a9%e7%84%b6%e5%8a%a9%e7%9c%a0%e6%b3%95-%e4%b8%80%e8%a6%ba%e5%88%b0%e5%a4%a9%e4%ba%ae%e3%80%91" target="_blank">七招【天然助眠法 一覺到天亮】</a></h3><p>【天然助眠法 一覺到天亮】    我曾以熬夜為樂，後來經常感冒、腸胃炎、頭痛，變成藥罐子，小病變成常態。  我先生罹癌前因為趕論文經常失眠，必須... (<a
+href="https://vitagrace.pixnet.net/blog/post/463532384-%e4%b8%83%e6%8b%9b%e3%80%90%e5%a4%a9%e7%84%b6%e5%8a%a9%e7%9c%a0%e6%b3%95-%e4%b8%80%e8%a6%ba%e5%88%b0%e5%a4%a9%e4%ba%ae%e3%80%91" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/vitagrace?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s8.pimg.tw/avatar/vitagrace/0/0/zoomcrop/24x24.png?v=1378039695" class="avatar" width="24" height="24" alt="陳月卿" title="陳月卿">陳月卿</a>  發表於 2018.07.11 |  <a
+href="https://vitagrace.pixnet.net/blog/post/463532384-%e4%b8%83%e6%8b%9b%e3%80%90%e5%a4%a9%e7%84%b6%e5%8a%a9%e7%9c%a0%e6%b3%95-%e4%b8%80%e8%a6%ba%e5%88%b0%e5%a4%a9%e4%ba%ae%e3%80%91#comments" target="_blank" class="comment">留言 (1)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=vitagrace&amp;articleid=463532384&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li><li
+class="rank-9">
+<a
+href="https://elizapdm.pixnet.net/blog/post/24317207" class="no-images" target="_blank"><img
+src="//mainpage.pixfs.net/blog2012/data/no-image.gif" width="90" height="90"></a><h3><a
+href="https://elizapdm.pixnet.net/blog/post/24317207" target="_blank">痘痘告訴你,身體哪裏生病了</a></h3><p>額頭痘VS肝臟 如果你的額頭總有大粒痘痘不斷,那說明你的肝臟已經積累了過多毒素,不規律的生活,晝夜顛倒,長時間熬夜都會讓肝臟不能在正常時間(夜裏1... (<a
+href="https://elizapdm.pixnet.net/blog/post/24317207" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/Elizapdm?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s4.pimg.tw/avatar/elizapdm/0/0/zoomcrop/24x24.png?v=1252651418" class="avatar" width="24" height="24" alt="Elizapdm" title="Elizapdm">Elizapdm</a>  發表於 2009.09.15 |  <a
+href="https://elizapdm.pixnet.net/blog/post/24317207#comments" target="_blank" class="comment">留言 (143)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=Elizapdm&amp;articleid=24317207&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li><li
+class="rank-10">
+<a
+href="https://fafa168.pixnet.net/blog/post/97215332-%e5%8f%b2%e4%b8%8a%e6%9c%80%e5%85%a8%e9%86%92%e9%85%92%e8%a7%a3%e9%85%92%e6%b3%95---" class="no-images" target="_blank"><img
+src="//mainpage.pixfs.net/blog2012/data/no-image.gif" width="90" height="90"></a><h3><a
+href="https://fafa168.pixnet.net/blog/post/97215332-%e5%8f%b2%e4%b8%8a%e6%9c%80%e5%85%a8%e9%86%92%e9%85%92%e8%a7%a3%e9%85%92%e6%b3%95---" target="_blank">史上最全醒酒解酒法　 　</a></h3><p>政府執行取締酒駕標準愈來愈嚴苛，酒駕取締新標準，6/13上路，呼氣酒精濃度，達到每公升0.15毫克就開罰，達到每公升0.25毫克，就依公共危險罪移送... (<a
+href="https://fafa168.pixnet.net/blog/post/97215332-%e5%8f%b2%e4%b8%8a%e6%9c%80%e5%85%a8%e9%86%92%e9%85%92%e8%a7%a3%e9%85%92%e6%b3%95---" target="_blank">繼續閱讀 </a>)</p>
+<span
+class="meta"><a
+href="https://www.pixnet.net/pcard/fafa168?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author"><img
+src="https://s7.pimg.tw/avatar/fafa168/0/0/zoomcrop/24x24.png?v=1436976518" class="avatar" width="24" height="24" alt="星座生肖運勢大全" title="星座生肖運勢大全">星座生肖運勢大全</a>  發表於 2013.06.27 |  <a
+href="https://fafa168.pixnet.net/blog/post/97215332-%e5%8f%b2%e4%b8%8a%e6%9c%80%e5%85%a8%e9%86%92%e9%85%92%e8%a7%a3%e9%85%92%e6%b3%95---#comments" target="_blank" class="comment">留言 (2)</a></span>
+<iframe
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=fafa168&amp;articleid=97215332&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li></ol><div
+class="page" role="navigation">
+<a
+href="javascript:; " class="page-back" title="前往上一頁">上一頁</a>
+<a
+href="/blog/articles/category/33/hot/1" class="page-now"  title="前往第 1 頁">1</a>
+<a
+href="/blog/articles/category/33/hot/2"  title="前往第 2 頁">2</a>
+<a
+href="/blog/articles/category/33/hot/3"  title="前往第 3 頁">3</a>
+<a
+href="/blog/articles/category/33/hot/4"  title="前往第 4 頁">4</a>
+<a
+href="/blog/articles/category/33/hot/5"  title="前往第 5 頁">5</a>
+<a
+href="/blog/articles/category/33/hot/6"  title="前往第 6 頁">6</a>
+<a
+href="/blog/articles/category/33/hot/7"  title="前往第 7 頁">7</a>
+<a
+href="/blog/articles/category/33/hot/8"  title="前往第 8 頁">8</a>
+<a
+href="/blog/articles/category/33/hot/9"  title="前往第 9 頁">9</a>
+<a
+href="/blog/articles/category/33/hot/10"  title="前往第 10 頁">10</a>
+<a
+href="/blog/articles/category/33/hot/2" class="page-next" title="前往下一頁">下一頁</a></div></div></div><div
+class="ad" id="ad-content-2"></div></div><div
+id="sidebar"><div
+class="ad" id="ad-side-1"></div><div
+class="side-box" id="hot-bloggers"><div
+class="box-header"><h2><span>醫療保健熱門部落客</span></h2></div><div
+class="box-body"><ul><li
+class="rank-1">
+<span
+class="rank">1</span>
+<a
+href="https://www.pixnet.net/pcard/mulicia?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33"><img
+src="https://s1.pimg.tw/avatar/mulicia/0/0/zoomcrop/90x90.png?v=1252643553" class="avatar" width="90" height="90" alt="快樂小藥師" title="快樂小藥師"></a><h3><a
+href="https://www.pixnet.net/pcard/mulicia?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author">快樂小藥師</a>｜<a
+href="https://mulicia.pixnet.net/blog" class="blog-title" target="_blank">快樂小藥師 Im pharmacist nichts glücklich</a></h3><h4>快樂小藥師在此提供醫藥訊息、醫藥知識，還有很多小藥師的生...</h4><ul
+class="article-list"><li>
+<a
+href="https://mulicia.pixnet.net/blog/post/32899702" class="title" target="_blank">舒利渼 suremed 人工皮超薄型傷口隱形貼</a><p
+class="summary">生活中總是有不小心有點小傷口，現在算是人工皮普遍被大家使...(<a
+href="https://mulicia.pixnet.net/blog/post/32899702" target="_blank">繼續閱讀</a>)</p></li></ul></li><li
+class="rank-2">
+<span
+class="rank">2</span>
+<a
+href="https://www.pixnet.net/pcard/b303094004?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33"><img
+src="https://s8.pimg.tw/avatar/b303094004/0/0/zoomcrop/90x90.png?v=1431950153" class="avatar" width="90" height="90" alt="微笑藥師網" title="微笑藥師網"></a><h3><a
+href="https://www.pixnet.net/pcard/b303094004?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author">微笑藥師網</a>｜<a
+href="https://b303094004.pixnet.net/blog" class="blog-title" target="_blank">微笑藥師網</a></h3><h4>微笑藥師網是微笑藥師的職業學習過程，提供給大家相互討論與...</h4><ul
+class="article-list"><li>
+<a
+href="https://b303094004.pixnet.net/blog/post/349673590" class="title" target="_blank">修補腸胃黏膜-肌肽鋅(zinc carnosine)</a></li></ul></li><li
+class="rank-3">
+<span
+class="rank">3</span>
+<a
+href="https://www.pixnet.net/pcard/wewe333we?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33"><img
+src="https://s3.pimg.tw/avatar/wewe333we/0/0/zoomcrop/90x90.png?v=1557130939" class="avatar" width="90" height="90" alt="林政華（大仁）" title="林政華（大仁）"></a><h3><a
+href="https://www.pixnet.net/pcard/wewe333we?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author">林政華（大仁）</a>｜<a
+href="https://wewe333we.pixnet.net/blog" class="blog-title" target="_blank">淺談保險觀念</a></h3><h4>保險商品很複雜，但看我用「淺談」的方式，為正在尋找如何規...</h4><ul
+class="article-list"><li>
+<a
+href="https://wewe333we.pixnet.net/blog/post/227896079-%e4%bf%9d%e9%9a%aa%e5%85%ac%e5%8f%b8%e5%80%92%e9%96%89%e6%80%8e%e9%ba%bc%e8%be%a6%ef%bc%9f%e6%b2%92%e9%97%9c%e4%bf%82%ef%bc%8c%e9%80%99%e7%af%87%e6%95%99%e4%bd%a0%e6%80%8e%e9%ba%bc" class="title" target="_blank">保險公司倒閉怎麼辦？沒關係，這篇教你怎麼看</a></li></ul></li><li
+class="rank-4">
+<span
+class="rank">4</span>
+<a
+href="https://www.pixnet.net/pcard/teachingcenter1?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33"><img
+src="https://s4.pimg.tw/avatar/teachingcenter1/0/0/zoomcrop/90x90.png?v=1494773353" class="avatar" width="90" height="90" alt="TeachingCenter." title="TeachingCenter."></a><h3><a
+href="https://www.pixnet.net/pcard/teachingcenter1?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author">TeachingCenter.</a>｜<a
+href="https://teachingcenter1.pixnet.net/blog" class="blog-title" target="_blank">~Teachingcenter的醫學筆記~</a></h3><h4>如有錯誤 歡迎各方專家指正 謝謝</h4><ul
+class="article-list"><li>
+<a
+href="https://teachingcenter1.pixnet.net/blog/post/355781489" class="title" target="_blank">(PGY、R)住院醫師生存守則-3</a></li></ul></li><li
+class="rank-5">
+<span
+class="rank">5</span>
+<a
+href="https://www.pixnet.net/pcard/lovegod777?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33"><img
+src="https://s5.pimg.tw/avatar/lovegod777/0/0/zoomcrop/90x90.png?v=1351778719" class="avatar" width="90" height="90" alt="小右or姐姐" title="小右or姐姐"></a><h3><a
+href="https://www.pixnet.net/pcard/lovegod777?utm_source=PIXNET&amp;utm_medium=blog_category&amp;utm_content=33" class="author">小右or姐姐</a>｜<a
+href="https://lovegod777.pixnet.net/blog" class="blog-title" target="_blank">小右的抗癌筆記</a></h3><h4>我知道怎樣處卑賤，也知道怎樣處豐富；...... 我靠著那加給我...</h4><ul
+class="article-list"><li>
+<a
+href="https://lovegod777.pixnet.net/blog/post/227509325-%e7%94%9f%e6%97%a5%e5%bf%ab%e6%a8%82%ef%bc%81%e5%b0%8f%e5%8f%b3%e7%9a%8436%e6%ad%b2%e7%94%9f%e6%97%a5%e7%a6%ae%e7%89%a9%ef%bd%9e--by-%e5%b0%8f%e5%a9%b7" class="title" target="_blank">生日快樂！小右的36歲生日禮物～  by 小婷</a></li></ul></li></ul><a
+href="https://blogranking.events.pixnet.net/?sort=populous&amp;category=22" target="_blank" class="more">前 100 名完整榜單</a></div></div><div
+class="side-box" id="latest-events"><div
+class="box-header"><h2><span>最新活動</span></h2></div><div
+class="box-body"><ul><li>
+<a
+href="http://channel.pixnet.net/newdirect.php?type=event&amp;serial=8258&amp;url=https%3A%2F%2F3mfiltrete.events.pixnet.net" target="_blank">
+<img
+src="https://pic.pimg.tw/eventblog/1562924258-1209580239.jpg" width="160" height="100">
+<span>填問卷就有機會體驗四組3M空氣濾網</span>
+</a></li><li>
+<a
+href="http://channel.pixnet.net/newdirect.php?type=event&amp;serial=8267&amp;url=https%3A%2F%2Flrp2019.events.pixnet.net%2F" target="_blank">
+<img
+src="https://pic.pimg.tw/eventblog/1563343966-1409010001.jpg" width="160" height="100">
+<span>理膚寶水油痘照護2大神器！立即索取試用</span>
+</a></li></ul>
+<a
+href="http://channel.pixnet.net/events" class="more" target="_blank">看更多活動</a></div></div><div
+class="ad" id="ad-side-2"></div><div
+class="ad" id="ad-side-3"></div><div
+class="side-box" id="fb-fans">
+<iframe
+src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FPIXNET.Family&amp;width=350px&amp;height=427&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:427px;" allowTransparency="true"></iframe></div></div></div><div
+id="footer"><div
+class="footer-links"><p><a
+href="//member.pixnet.cc/register">免費註冊</a> | <a
+href="//www.pixnet.net/regulation">服務條款</a> | <a
+href="//www.pixnet.net/privacy">隱私權政策</a> | <a
+href="//www.pixnet.net/sitemap">網站導覽</a> | <a
+href="http://help.pixnet.tw">客服中心</a> | <a
+href="//www.pixnet.net/contact">聯絡我們</a> | <a
+href="http://emkt.pixnet.net/blog" target="_blank">行銷合作</a> | <a
+href="http://developer.pixnet.pro" target="_blank">開發人員(API)</a> | <a
+href="//www.pixnet.net/career">徵才訊息</a> | <a
+href="//www.pixnet.net/static/pdf/rule.pdf">第二類電信營業規章</a> | <a
+href="https://www.cmh.com.tw/sub_net.htm" target="_blank">城邦集團</a></p><div
+class="copyright">Copyright &copy; 2003 - 2019 <a
+href="/"><img
+src="//mainpage.pixfs.net/index/images/footer_logo.png" align="absmiddle" width="122" height="26"></a> 優像數位媒體科技(股)公司</div></div></div><div
+id="extradiv8"></div><div
+id="extradiv7"></div><div
+id="extradiv6"></div><div
+id="extradiv5"></div></div><div
+id="extradiv4"></div><div
+id="extradiv3"></div><div
+id="extradiv2"></div><div
+id="extradiv1"></div></div></div><div
+class="ad" id="ad-followme"></div><div
+id="popup-frame" style="display:none"><div
+id="frame-dimmer"></div><div
+id="frame-box"><div
+id="frame-border"></div><div
+id="frame-header"><h3></h3>
+<a
+href="#" class="frame-close" title="關閉視窗"><span>關閉視窗</span></a></div><div
+id="frame-content"></div></div></div> <script type="text/x-jquery-tmpl" id="subscription-friends-one"><a href="${users[0].profile_link}"target="_blank">${users[0].display_name}</a>已經加入訂閱</script> <script type="text/x-jquery-tmpl" id="subscription-friends-two"><a href="${users[0].profile_link}"target="_blank">${users[0].display_name}</a>和<a href="${users[1].profile_link}"target="_blank">${users[1].display_name}</a>已經加入訂閱</script> <script type="text/x-jquery-tmpl" id="subscription-friends-more"><a href="${users[0].profile_link}"target="_blank">${users[0].display_name}</a>，<a href="${users[1].profile_link}"target="_blank">${users[1].display_name}</a>...等<a href="#"class="popup-click"data-url="${blogger.reader_popup_link}"data-title="${blogger.display_name} 的讀者列表">${count}</a>人已經加入訂閱</script> <script type="text/javascript">mainpage.blog_blogger_subscription("panel.pixnet.cc");mainpage.blog_display_more();$('.box-body').delegate('ol.article-list li','mouseenter',function(){$(this).addClass('hover');}).delegate('li','mouseleave',function(e){$(this).removeClass('hover');});</script> <script type="text/javascript">pix.ad_load_func[235]=function(embedid){jQuery('#'+embedid).height(230);};pix.ad_unload_func[235]=function(embedid){jQuery('#'+embedid).height(70);};pix.ad_load_func[227]=function(embedid){jQuery('#'+embedid).height(410);jQuery('#ad-side-1').height(410);};pix.ad_unload_func[227]=function(embedid){jQuery('#'+embedid).height(200);jQuery('#ad-side-1').height(200);};jQuery('#ad-followme').height(0).width(0);pix.ad_load_init[257]=function(embedid){jQuery('#ad-followme').height(240).width(25);};pix.ad_load_func[257]=function(embedid){jQuery('#'+embedid).height(400).width(400);jQuery('#ad-followme').height(400).width(400);};pix.ad_unload_func[257]=function(embedid){jQuery('#'+embedid).height(240).width(25);jQuery('#ad-followme').height(240).width(25);};</script> <script src="//mainpage.pixfs.net/js/mixpanel-init.js?v=0266dd05e17bbf7c416a3f8d18c94d38"></script> <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-408650-10'],['_setDetectTitle',false],['_setDomainName','none'],['_setVar','GUEST'],['_setVar','nonVIP'],['_trackPageview',"\/index\/blog"],['_trackPageLoadTime']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://':'http://')+'stats.g.doubleclick.net/dc.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);var cookieMatchImg=new Image();cookieMatchImg.src='//cm.g.doubleclick.net/pixel?google_nid=pixnet_dmp&google_cm';})();</script> <script type="text/javascript">jQuery(function(){jQuery.getScript('//falcon.pixnet.net/ad/js?fields[]=none,254&fields[]=%3Enavigation,671&fields[]=ad-main,235&fields[]=ad-content-1,230&fields[]=ad-content-2,231&fields[]=ad-side-1,227&fields[]=ad-side-2,228&fields[]=ad-side-3,229&fields[]=ad-followme,257');});</script> <ins
+class="adsbyfalcon" data-ad-client="1" data-ad-slot="3033" data-embed="false" style="display:inline-block;"></ins><script async src="//falcon-asset.pixfs.net/js/adsbyfalcon.min.js"></script> <script type="text/javascript" src="//s.pixanalytics.com/js/c.js"></script> <script type="text/javascript">var _type='mainpage_blog_new';_uCount();</script> <script type="text/javascript" src="//api.pixnet.cc/visit.php?timestamp=1563589269&amp;random=2646302890&amp;position=mainpage_blog&amp;check=4098850050"></script><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-20543617-2'],['_trackPageview'],['_setDomainName','pixnet.net'],['_setAllowLinker',true]);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://':'http://')+'stats.g.doubleclick.net/dc.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script> <script src="//mainpage.pixfs.net/js/jquery.scrolldepth.min.js?v=0266dd05e17bbf7c416a3f8d18c94d38"></script> <script>$.scrollDepth();</script> <script>var _piq=window._piq||[];_piq.push(['setCustomVar','venue','pixnet-mainpage'],['setCustomVar','visitor_id',window.pix.visitor],['setCustomVar','member_uniqid',window.pix.member_uniqid],['trackPageView']);(function(d,t,u,f,j){f=d.getElementsByTagName(t)[0];j=d.createElement(t);j.async=1;j.src=u;f.parentNode.insertBefore(j,f);})(document,'script','https://s.pixanalytics.com/js/pi.min.js');</script></body></html>
