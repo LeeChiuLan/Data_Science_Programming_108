@@ -39,6 +39,8 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 ## Week 2
 - Progress:
     - At home
+        - R learning: [爬蟲+文字雲](https://leechiulan.github.io/Data_Science_Programming_108/Samples/WebSpider/BlogBasketball.html)
+    
     - At School
         - DataCamp
             - [ggplot](https://leechiulan.github.io/Data_Science_Programming_108/week2/part1/testDiamonds.html)
@@ -51,7 +53,9 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
   - [108 全國夏季學院 (7/11) Class 2](https://www.peculab.org/2019/07/10/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-11-class-2/)
 - week 2
   - 投影片 [視覺化與EDA](https://docs.google.com/presentation/d/e/2PACX-1vTvdUOo9w0RFYs8NBIr7svtShHutVeipc9zAMFJN8Bq2LzVCwBpvEO5ChIfaoRjspZDAJSMbJOjWBL8/pub?start=false&loop=false&delayms=3000&slide=id.p)
+  - 投影片 [文字探勘簡介](https://docs.google.com/presentation/d/e/2PACX-1vRGRc4TLe_rffXaSlWPU7rWZx4fQ7HxMcwHXbTAxfWh6xwlBtM9rxA1rfHI5eM-2GaxkMGC2NMSnUj5/pub?start=false&loop=false&delayms=3000)
   - [108 全國夏季學院 (7/15) Class 3](http://www.peculab.org/2019/07/11/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-15-class-3/)
+  - [108 全國夏季學院 (7/18) Class 4](https://www.peculab.org/2019/07/15/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-18-class-4/)
   
 ## Reference
 - [資料科學- text mining 文字雲 --以自由時報體育版新聞為例](http://to52016.pixnet.net/blog/post/342915697-%5Br%5D-資料科學--text-mining-文字雲---以自由時報體)
