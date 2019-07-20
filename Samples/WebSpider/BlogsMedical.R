@@ -27,5 +27,5 @@ for(i in 2:rank){
   df <- data.frame("title"=title,"URL"=theUrl) %>% rbind(df)
 }
 
-View(df)
+df
 
