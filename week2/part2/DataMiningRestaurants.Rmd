@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 依縣市為Documents <- 有興趣縣市之間的關係
+## 從全國觀光餐飲業者的自我介紹文章中,看看縣市之間的關係
 
 ## 資料庫來源
 #### [餐飲 - 觀光資訊資料庫](https://data.gov.tw/dataset/7779)
