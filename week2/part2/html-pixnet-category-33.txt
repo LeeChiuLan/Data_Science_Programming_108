@@ -376,7 +376,8 @@ href="https://www.pixnet.net/pcard/fafa168?utm_source=PIXNET&amp;utm_medium=blog
 src="https://s7.pimg.tw/avatar/fafa168/0/0/zoomcrop/24x24.png?v=1436976518" class="avatar" width="24" height="24" alt="星座生肖運勢大全" title="星座生肖運勢大全">星座生肖運勢大全</a>  發表於 2013.06.27 |  <a
 href="https://fafa168.pixnet.net/blog/post/97215332-%e5%8f%b2%e4%b8%8a%e6%9c%80%e5%85%a8%e9%86%92%e9%85%92%e8%a7%a3%e9%85%92%e6%b3%95---#comments" target="_blank" class="comment">留言 (2)</a></span>
 <iframe
-src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=fafa168&amp;articleid=97215332&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li></ol><div
+src="//panel.pixnet.cc/pixfront/commentpush/blogarticle?user=fafa168&amp;articleid=97215332&amp;position=without_login" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0"></iframe></li></ol>
+<div
 class="page" role="navigation">
 <a
 href="javascript:; " class="page-back" title="前往上一頁">上一頁</a>
@@ -401,7 +402,9 @@ href="/blog/articles/category/33/hot/9"  title="前往第 9 頁">9</a>
 <a
 href="/blog/articles/category/33/hot/10"  title="前往第 10 頁">10</a>
 <a
-href="/blog/articles/category/33/hot/2" class="page-next" title="前往下一頁">下一頁</a></div></div></div><div
+href="/blog/articles/category/33/hot/2" class="page-next" title="前往下一頁">下一頁</a></div>
+</div></div>
+<div
 class="ad" id="ad-content-2"></div></div><div
 id="sidebar"><div
 class="ad" id="ad-side-1"></div><div
