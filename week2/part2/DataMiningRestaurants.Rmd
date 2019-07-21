@@ -239,7 +239,7 @@ tempGraph$freq = unfactor(tempGraph$freq)
 ggplot(tempGraph, aes(city, freq)) + 
   geom_point(aes(color = words, shape = words), size = 5) +
   geom_line(aes(group = words, linetype = words))+
-  theme(text=element_text(family="黑體-繁 中黑", size=14))
+  theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=90, hjust=1))
 ```
 
 ```{r}
