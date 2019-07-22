@@ -52,3 +52,17 @@ ggplot(data = pm25data, aes(x=Date, y= Value)) + geom_line(color=plotColor) +
 library(plyr)
 df_PM25_WK <- ddply(pm25data, .(WeekDay), summarize, Rate_PM25=mean(Value)%>%round(digits = 2))
 print(df_PM25_WK)
+
+month_levels <- c("January","February","March","April","May","June","July","August","September","October","November","December")
+pm25data_M1 <- pm25data[pm25data$Month == month_levels[1],]
+pm25data_M2 <- pm25data[pm25data$Month == month_levels[2],]
+pm25data_M3 <- pm25data[pm25data$Month == month_levels[3],]
+pm25data_M4 <- pm25data[pm25data$Month == month_levels[4],]
+pm25data_M5 <- pm25data[pm25data$Month == month_levels[5],]
+pm25data_M6 <- pm25data[pm25data$Month == month_levels[6],]
+pm25data_M7 <- pm25data[pm25data$Month == month_levels[7],]
+pm25data_M8 <- pm25data[pm25data$Month == month_levels[8],]
+pm25data_M9 <- pm25data[pm25data$Month == month_levels[9],]
+pm25data_M10 <- pm25data[pm25data$Month == month_levels[10],]
+pm25data_M11 <- pm25data[pm25data$Month == month_levels[11],]
+pm25data_M12 <- pm25data[pm25data$Month == month_levels[12],]
