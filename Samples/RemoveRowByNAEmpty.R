@@ -1,7 +1,7 @@
 library(dplyr)
 library(readxl)
 
-index <- 1
+index <- 7
 
 sites <- c('士林','大同','中山','古亭','松山','陽明','萬華')
 #colorSet <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00")
@@ -42,16 +42,23 @@ pm25data <- pm25data[complete.cases(pm25data), ]
 pm25data
 
 pm25data[,4:27]<-lapply(pm25data[,4:27], function(x) as.numeric(as.character(x)))
-pm25data$Value <- rowMeans(pm25data[,4:27]) %>% round(digits = 2)
+pm25data <- pm25data[complete.cases(pm25data), ]  # once again to remove NA
+pm25data$meansValue <- rowMeans(pm25data[,4:27]) %>% round(digits = 2)
 library(ggplot2)
-ggplot(data = pm25data, aes(x=Date, y= Value)) + geom_line(color=plotColor) +
+ggplot(data = pm25data, aes(x=Date, y= meansValue)) + geom_line(color=plotColor) +
   theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
   labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"), caption="source: mpg")
 
-# 畫星期平均
+# 星期平均 by Year
 library(plyr)
-df_PM25_WK <- ddply(pm25data, .(WeekDay), summarize, Rate_PM25=mean(Value)%>%round(digits = 2))
+df_PM25_WK <- ddply(pm25data, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 print(df_PM25_WK)
+g <- ggplot(df_PM25_WK, aes(x=WeekDay, y=Rate_PM25, label = Rate_PM25)) + 
+  geom_bar(stat="identity", width=.5, fill=plotColor) + 
+  labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站"), 
+       caption="source: mpg") +
+  theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=60, hjust=1))
+g + geom_text(aes(label = Rate_PM25),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9), vjust=-0.25)
 
 month_levels <- c("January","February","March","April","May","June","July","August","September","October","November","December")
 pm25data_M1 <- pm25data[pm25data$Month == month_levels[1],]
@@ -66,3 +73,32 @@ pm25data_M9 <- pm25data[pm25data$Month == month_levels[9],]
 pm25data_M10 <- pm25data[pm25data$Month == month_levels[10],]
 pm25data_M11 <- pm25data[pm25data$Month == month_levels[11],]
 pm25data_M12 <- pm25data[pm25data$Month == month_levels[12],]
+# 星期平均 by Month
+mdf <- pm25data_M1
+df_PM25_WK_M1 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M2
+df_PM25_WK_M2 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M3
+df_PM25_WK_M3 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M4
+df_PM25_WK_M4 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M5
+df_PM25_WK_M5 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M6
+df_PM25_WK_M6 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M7
+df_PM25_WK_M7 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M8
+df_PM25_WK_M8 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M9
+df_PM25_WK_M9 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M1
+df_PM25_WK_M1 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M10
+df_PM25_WK_M10 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M11
+df_PM25_WK_M11 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+mdf <- pm25data_M12
+df_PM25_WK_M12 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+
+
