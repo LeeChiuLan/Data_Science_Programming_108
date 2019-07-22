@@ -27,7 +27,7 @@ Sys.setlocale("LC_TIME", "en_US")
 colnames(df)[1] <- "Date"
 df$WeekDay <- weekdays(as.Date(df$Date))
 df$WeekDay <- ordered(df$WeekDay, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", 
-                                           "Friday", "Saterday", "Sunday"))
+                                           "Friday", "Saturday", "Sunday"))
 
 # add Month
 df <- df %>% mutate(Month = months(Date))
@@ -75,9 +75,9 @@ pm25data_M11 <- pm25data[pm25data$Month == month_levels[11],]
 pm25data_M12 <- pm25data[pm25data$Month == month_levels[12],]
 # 星期平均 by Month
 mdf <- pm25data_M1
-df_PM25_WK_M1 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M1 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M2
-df_PM25_WK_M2 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M2 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M3
 df_PM25_WK_M3 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M4
