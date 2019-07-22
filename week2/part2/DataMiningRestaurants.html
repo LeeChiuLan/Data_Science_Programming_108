@@ -196,8 +196,8 @@ $(document).ready(function () {
 </div>
 
 
-<div class="section level2">
-<h2>從全國觀光餐飲業者的自我介紹文章中,看看縣市之間的關係</h2>
+<div id="subject-" class="section level2">
+<h2>Subject: 從全國觀光餐飲業者的自我介紹文章中,看看縣市之間的關係</h2>
 </div>
 <div class="section level2">
 <h2>資料庫來源</h2>
@@ -373,8 +373,8 @@ TaiEng</code></pre>
 }</code></pre>
 </div>
 </div>
-<div id="descriptionadd" class="section level3">
-<h3>對於“Description”依縣市(“Add”)合併儲存</h3>
+<div class="section level3">
+<h3>執行合併文本動作</h3>
 <pre class="r"><code>dff &lt;- restaurantdata_raw
 dff = dff[dff$Add != &quot;&quot;,]    # remove empty row
 dff = dff[dff$Description != &quot;&quot;,]    # remove empty row
@@ -1470,48 +1470,6 @@ x
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>kable(tail(doc.tfidf[delID,1]))</code></pre>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-x
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-的
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-好
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-很
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-讓
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-特色
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-也
-</td>
-</tr>
-</tbody>
-</table>
 <pre class="r"><code>TDM = TDM[-delID,]
 doc.tfidf = doc.tfidf[-delID,]</code></pre>
 </div>
@@ -2502,8 +2460,14 @@ Freq
 </tbody>
 </table>
 </div>
-<div id="section" class="section level3">
-<h3></h3>
+</div>
+<div class="section level2">
+<h2>結論</h2>
+<div id="--." class="section level4">
+<h4>雖然台灣到處都吃得到大江南北各地的小吃菜色,經由此番文字探勘,由各縣市餐飲的自我介紹文,我們還是能看到台灣各縣市不同的特色小吃,最後一張視覺化圖形,也帶出各縣市也是與族群有關的(阿美族 客家 阿兵哥).</h4>
+</div>
+<div id="." class="section level4">
+<h4>課堂還有不錯的分析資料工具與技巧方法,因礙於時間短促,還有很多有趣的深入究竟狀況,我會好好再研究觀察的.</h4>
 </div>
 </div>
 
