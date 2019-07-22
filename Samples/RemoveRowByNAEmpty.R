@@ -24,11 +24,13 @@ dim(df)
 
 # add weekday
 Sys.setlocale("LC_TIME", "en_US")
-df <- df %>% rename(Date="日期")
-df$WeekDay <- weekdays(as.Date(df$MonitorDate))
-
+colnames(df)[1] <- "Date"
+df$WeekDay <- weekdays(as.Date(df$Date))
 df$WeekDay <- ordered(df$WeekDay, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", 
                                            "Friday", "Saterday", "Sunday"))
+
+# add Month
+df <- df %>% mutate(Month = months(Date))
 
 # select the PM2.5 only
 pm25data <- df[df[3] == "PM2.5",]
@@ -45,3 +47,8 @@ library(ggplot2)
 ggplot(data = pm25data, aes(x=Date, y= Value)) + geom_line(color=plotColor) +
   theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
   labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"), caption="source: mpg")
+
+# 畫星期平均
+library(plyr)
+df_PM25_WK <- ddply(pm25data, .(WeekDay), summarize, Rate_PM25=mean(Value)%>%round(digits = 2))
+print(df_PM25_WK)
