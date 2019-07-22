@@ -1,7 +1,7 @@
 library(dplyr)
 library(readxl)
 
-index <- 7
+index <- 3
 
 sites <- c('士林','大同','中山','古亭','松山','陽明','萬華')
 #colorSet <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00")
