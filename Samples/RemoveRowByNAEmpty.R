@@ -14,6 +14,7 @@ week_levels <- c("Monday", "Tuesday", "Wednesday", "Thursday",
                "Friday", "Saturday", "Sunday")
 month_levels <- c("January","February","March","April","May",
                   "June","July","August","September","October","November","December")
+month_num <- c("1","2","3","4","5","6","7","8","9","10","11","12")
 dir_pic <- "../project/pictures"
 
 creatPath <- function(subDir){
@@ -59,13 +60,13 @@ doActions <- function(index){
   pm25data <- pm25data[complete.cases(pm25data), ]  # once again to remove NA
   pm25data$meansValue <- rowMeans(pm25data[,4:27]) %>% round(digits = 2)
   
-  filename <- paste0(siteName,".png")
-  # 1. Draw by day
+  filename <- paste0(siteName,".png") # set the output filename for ggplot
+  # 1. Draw by day the whole year
   ggplot(data = pm25data, aes(x=Date, y= meansValue)) + geom_line(color=plotColor) +
     theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
     labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"), caption="source: mpg")
   
-  ggsave(filename, path = path <- creatPath("/ByDate"))
+  ggsave(filename, path = creatPath("/ByDate"))
   
   # 2.Draw by weekday
   # 星期平均 by Year
@@ -138,12 +139,40 @@ doActions <- function(index){
   
   ggsave(filename, path = creatPath("/Means/WeekByMonth"))
   
+  return(pm25data)
 }
 
-doActions(1)
-doActions(2)
-doActions(3)
-doActions(4)
-doActions(5)
-doActions(6)
-doActions(7)
+data_1 <- doActions(1)
+data_2 <- doActions(2)
+data_3 <- doActions(3)
+data_4 <- doActions(4)
+data_5 <- doActions(5)
+data_6 <- doActions(6)
+data_7 <- doActions(7)
+
+# select a range of dates
+getRangeInDF <- function(df,MM,dd1=NULL,dd2=NULL){
+  theNumberOne <- "-01"
+  theNumberSevent <- "-08"
+  
+  if(is.null(dd1)==FALSE) {
+    theNumberOne <- paste0("-",dd1)
+  }
+  if(is.null(dd2)==FALSE) {
+    theNumberSevent <- paste0("-",dd2+1)
+  }
+  
+  startDate <- paste0("2018-",month_num[MM],theNumberOne)
+  endDate <- paste0("2018-",month_num[MM],theNumberSevent)
+  
+  ptimeDate<- subset(df, Date >= startDate & Date < endDate)
+  return(ptimeDate)
+}
+
+
+data <- data_1
+ptimeDate <- getRangeInDF(df=data,MM=1)n <- nrow(ptimeDate)
+if(n<7){
+  warning(paste0('obtain the rows ',n, '< 7'))
+}
+
