@@ -1,11 +1,15 @@
 library(dplyr)
 library(readxl)
 
-index <- 3
+index <- 7
 
 sites <- c('士林','大同','中山','古亭','松山','陽明','萬華')
 #colorSet <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00")
 colorSet <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+doActions <- function(index){
+  v <- 1
+}
 
 siteName <- sites[index]
 plotColor <- colorSet[index]
@@ -79,26 +83,36 @@ df_PM25_WK_M1 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansVal
 mdf <- pm25data_M2
 df_PM25_WK_M2 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M3
-df_PM25_WK_M3 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M3 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M4
-df_PM25_WK_M4 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M4 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M5
-df_PM25_WK_M5 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M5 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M6
-df_PM25_WK_M6 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M6 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M7
-df_PM25_WK_M7 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M7 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M8
-df_PM25_WK_M8 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M8 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M9
-df_PM25_WK_M9 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M9 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M1
-df_PM25_WK_M1 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M1 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M10
-df_PM25_WK_M10 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M10 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M11
-df_PM25_WK_M11 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M11 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 mdf <- pm25data_M12
-df_PM25_WK_M12 <- ddply(mdf, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
+df_PM25_WK_M12 <- ddply(mdf, .(WeekDay,Month), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
 
+df_PM25_WK_Months <- rbind(df_PM25_WK_M1,df_PM25_WK_M2,df_PM25_WK_M3,df_PM25_WK_M4,df_PM25_WK_M5,df_PM25_WK_M6,df_PM25_WK_M7,df_PM25_WK_M8,df_PM25_WK_M9,df_PM25_WK_M10,df_PM25_WK_M11,df_PM25_WK_M12)
 
+ggplot(data = df_PM25_WK_Months, aes(x=Month, y= Rate_PM25)) + geom_line(aes(color=WeekDay))+
+  theme(text=element_text(family="黑體-繁 中黑", size=14))
+
+ggplot(data = df_PM25_WK_Months, aes(x = as.factor(x = Month), 
+                           y = Rate_PM25, 
+                           col = WeekDay, 
+                           group = WeekDay)) + 
+  geom_line() + 
+  geom_point()
