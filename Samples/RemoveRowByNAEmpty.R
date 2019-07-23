@@ -14,6 +14,13 @@ week_levels <- c("Monday", "Tuesday", "Wednesday", "Thursday",
                "Friday", "Saturday", "Sunday")
 month_levels <- c("January","February","March","April","May",
                   "June","July","August","September","October","November","December")
+dir_pic <- "../project/pictures"
+
+creatPath <- function(subDir){
+  dir.create(file.path(dir_pic, subDir), recursive = TRUE, showWarnings = FALSE)
+  ret <- paste0(dir_pic,subDir,"/")
+  return (ret)
+}
 
 doActions <- function(index){
   siteName <- sites[index]
@@ -52,11 +59,14 @@ doActions <- function(index){
   pm25data <- pm25data[complete.cases(pm25data), ]  # once again to remove NA
   pm25data$meansValue <- rowMeans(pm25data[,4:27]) %>% round(digits = 2)
   
+  filename <- paste0(siteName,".png")
   # 1. Draw by day
   ggplot(data = pm25data, aes(x=Date, y= meansValue)) + geom_line(color=plotColor) +
     theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
     labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"), caption="source: mpg")
-
+  
+  ggsave(filename, path = path <- creatPath("/ByDate"))
+  
   # 2.Draw by weekday
   # 星期平均 by Year
   df_PM25_WK <- ddply(pm25data, .(WeekDay), summarize, Rate_PM25=mean(meansValue)%>%round(digits = 2))
@@ -66,6 +76,8 @@ doActions <- function(index){
     labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站"), caption="source: mpg") +
     theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=60, hjust=1))
   g + geom_text(aes(label = Rate_PM25),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9))
+  
+  ggsave(filename, path = creatPath("/Means/WeekByYear"))
 
   # 3. Draw weekday per month
   # 選出各月集合
@@ -113,7 +125,7 @@ doActions <- function(index){
   df_PM25_WK_Months <- rbind(df_PM25_WK_M1,df_PM25_WK_M2,df_PM25_WK_M3,df_PM25_WK_M4,df_PM25_WK_M5,df_PM25_WK_M6,df_PM25_WK_M7,df_PM25_WK_M8,df_PM25_WK_M9,df_PM25_WK_M10,df_PM25_WK_M11,df_PM25_WK_M12)
   # 設定月排序
   df_PM25_WK_Months$Month <- ordered(df_PM25_WK_Months$Month, levels=month.name)
-
+  
   g<-ggplot(data = df_PM25_WK_Months, aes(x = as.factor(x = Month), 
                            y = Rate_PM25, 
                            col = WeekDay, 
@@ -123,8 +135,10 @@ doActions <- function(index){
                   labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站"), caption="source: mpg") +
                   scale_color_manual(values=colorSet1)
   g+theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=60, hjust=1))
+  
+  ggsave(filename, path = creatPath("/Means/WeekByMonth"))
+  
 }
-
 
 doActions(1)
 doActions(2)
