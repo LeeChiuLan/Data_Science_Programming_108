@@ -17,6 +17,15 @@ month_levels <- c("January","February","March","April","May",
 month_num <- c("1","2","3","4","5","6","7","8","9","10","11","12")
 dir_pic <- "../project/pictures"
 
+# Variables Settings
+ID1 <- 1   #士林
+ID2 <- 2   #大同
+ID3 <- 3   #中山
+ID4 <- 4   #古亭
+ID5 <- 5   #松山
+ID6 <- 6   #陽明
+ID7 <- 7   #萬華
+
 creatPath <- function(subDir){
   dir.create(file.path(dir_pic, subDir), recursive = TRUE, showWarnings = FALSE)
   ret <- paste0(dir_pic,subDir,"/")
@@ -142,13 +151,13 @@ doActions <- function(index){
   return(pm25data)
 }
 
-data_1 <- doActions(1)
-data_2 <- doActions(2)
-data_3 <- doActions(3)
-data_4 <- doActions(4)
-data_5 <- doActions(5)
-data_6 <- doActions(6)
-data_7 <- doActions(7)
+data_1 <- doActions(ID1)
+data_2 <- doActions(ID2)
+data_3 <- doActions(ID3)
+data_4 <- doActions(ID4)
+data_5 <- doActions(ID5)
+data_6 <- doActions(ID6)
+data_7 <- doActions(ID7)
 
 # select a range of dates
 getRangeInDF <- function(df,MM,dd1=NULL,dd2=NULL){
@@ -169,10 +178,31 @@ getRangeInDF <- function(df,MM,dd1=NULL,dd2=NULL){
   return(ptimeDate)
 }
 
-
-data <- data_1
-ptimeDate <- getRangeInDF(df=data,MM=1)n <- nrow(ptimeDate)
-if(n<7){
-  warning(paste0('obtain the rows ',n, '< 7'))
+plotMonthsByHours <- function(dataIn,index,mm){
+  siteName <- sites[index]
+  data <- dataIn
+  ptimeDate <- getRangeInDF(df=data,MM=mm)
+  n <- nrow(ptimeDate)
+  if(n<7){
+    warning(paste0(siteName,' Month-',mm,': obtain the rows ',n, ' < 7'))
+  }
 }
+
+doTask2 <- function(dataIn,index){
+  for(mm in 1:12){
+    plotMonthsByHours(dataIn,index,mm)
+  }
+}
+
+doTask2(data_1,ID1)
+doTask2(data_2,ID2)
+doTask2(data_3,ID3)
+doTask2(data_4,ID4)
+doTask2(data_5,ID5)
+doTask2(data_6,ID6)
+doTask2(data_7,ID7)
+
+
+
+
 
