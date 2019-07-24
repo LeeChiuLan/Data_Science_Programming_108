@@ -185,6 +185,10 @@ plotMonthsByHours <- function(dataIn,index,mm){
   n <- nrow(ptimeDate)
   if(n<7){
     warning(paste0(siteName,' Month-',mm,': obtain the rows ',n, ' < 7'))
+  }else
+  { # ok, let's do it.
+    df <- data.frame(Hour = ptimeDate[4:27], N1 = 0:23, N2 = c(6:9, 0))
+      
   }
 }
 
