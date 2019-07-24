@@ -206,11 +206,11 @@ plotMonthsByHours <- function(dataIn,index,mm){
   { # ok, let's do it.
     df_PM25_WK_Hours <- transport4hour(ptimeDate,index = index)
     testData <- df_PM25_WK_Hours
-    filename <- paste0(siteName,".png") # set the output filename for ggplot
+    filename <- paste0(siteName,"-",mm,".png") # set the output filename for ggplot
     # 4. Draw by hour 
     library(reshape2)
     hrData<- melt(testData, id.vars="Hour")   #"value" and "variable" are default output column names of melt()
-    hrData['value'].astype(int)
+    #hrData['value'].astype(int)
     hrData$Hour <- ordered(hrData$Hour, levels=hour_num)
     s <- ggplot(data = hrData, aes(x=Hour,y=value, group=variable)) 
     s+ geom_line(aes(color=variable),size=1) + geom_point(color="red",size=0.6)+
@@ -230,8 +230,8 @@ doTask2 <- function(dataIn,index){
 }
 
 # verify
-#ptimeDate <- getRangeInDF(df=data_1,MM=1)
-#pHourData <- transport4hour(ptimeDate,index = 1)
+#ptimeDate <- getRangeInDF(df=data_2,MM=11)
+#pHourData <- transport4hour(ptimeDate,index = 2)
 #testData <- pHourData
 
 
