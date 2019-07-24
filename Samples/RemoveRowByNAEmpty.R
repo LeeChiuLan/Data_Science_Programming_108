@@ -15,6 +15,7 @@ week_levels <- c("Monday", "Tuesday", "Wednesday", "Thursday",
 month_levels <- c("January","February","March","April","May",
                   "June","July","August","September","October","November","December")
 month_num <- c("1","2","3","4","5","6","7","8","9","10","11","12")
+hour_num <- c("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23")
 dir_pic <- "../project/pictures"
 
 # Variables Settings
@@ -178,6 +179,18 @@ getRangeInDF <- function(df,MM,dd1=NULL,dd2=NULL){
   return(ptimeDate)
 }
 
+transport4hour <- function(dataIn,index){
+  data1 <- as.data.frame(t(dataIn[,1:27]))
+  
+  # the first row will be the header
+  colnames(data1) = as.character(unlist(data1[1,]))
+  data1 = data1[-1, ]          # removing the first row.
+  data1$Hour <- factor(row.names(data1))
+  
+  data1 <- data1[-c(1, 2),] # remove the first 2 rows
+  return(data1)
+}
+
 plotMonthsByHours <- function(dataIn,index,mm){
   siteName <- sites[index]
   data <- dataIn
@@ -187,7 +200,7 @@ plotMonthsByHours <- function(dataIn,index,mm){
     warning(paste0(siteName,' Month-',mm,': obtain the rows ',n, ' < 7'))
   }else
   { # ok, let's do it.
-    df <- data.frame(Hour = ptimeDate[4:27], N1 = 0:23, N2 = c(6:9, 0))
+    transport4hour(ptimeDate,index = index)
       
   }
 }
@@ -197,6 +210,11 @@ doTask2 <- function(dataIn,index){
     plotMonthsByHours(dataIn,index,mm)
   }
 }
+
+# verify
+#ptimeDate <- getRangeInDF(df=data_1,MM=1)
+#pHourData <- transport4hour(ptimeDate,index = 1)
+
 
 doTask2(data_1,ID1)
 doTask2(data_2,ID2)
