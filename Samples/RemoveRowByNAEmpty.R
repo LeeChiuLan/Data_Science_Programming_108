@@ -74,7 +74,7 @@ doActions <- function(index){
   # 1. Draw by day the whole year
   ggplot(data = pm25data, aes(x=Date, y= meansValue)) + geom_line(color=plotColor) +
     theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
-    labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"), caption="source: mpg")
+    labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"))
   
   ggsave(filename, path = creatPath("/ByDate"))
   
@@ -84,7 +84,7 @@ doActions <- function(index){
   print(df_PM25_WK)
   g <- ggplot(df_PM25_WK, aes(x=WeekDay, y=Rate_PM25, label = Rate_PM25)) + 
     geom_bar(stat="identity", width=.5, fill=plotColor) + 
-    labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站"), caption="source: mpg") +
+    labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站")) +
     theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=60, hjust=1))
   g + geom_text(aes(label = Rate_PM25),size = 4, hjust = 0.5, vjust = 3, position=position_dodge(width=0.9))
   
@@ -143,7 +143,7 @@ doActions <- function(index){
                            group = WeekDay)) + 
                   geom_line() + 
                   geom_point() + 
-                  labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站"), caption="source: mpg") +
+                  labs(title=paste0("PM2.5 - [2018年]   ",siteName,"測站")) +
                   scale_color_manual(values=colorSet1)
   g+theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=60, hjust=1))
   
@@ -179,6 +179,10 @@ getRangeInDF <- function(df,MM,dd1=NULL,dd2=NULL){
   return(ptimeDate)
 }
 
+flatByDate <- function(dataIn){
+  df["Date"] = dataIn.colindex.names[index]
+}
+
 transport4hour <- function(dataIn,index){
   data1 <- as.data.frame(t(dataIn[,1:27]))
   
@@ -200,7 +204,21 @@ plotMonthsByHours <- function(dataIn,index,mm){
     warning(paste0(siteName,' Month-',mm,': obtain the rows ',n, ' < 7'))
   }else
   { # ok, let's do it.
-    transport4hour(ptimeDate,index = index)
+    df_PM25_WK_Hours <- transport4hour(ptimeDate,index = index)
+    testData <- df_PM25_WK_Hours
+    filename <- paste0(siteName,".png") # set the output filename for ggplot
+    # 4. Draw by hour 
+    library(reshape2)
+    hrData<- melt(testData, id.vars="Hour")   #"value" and "variable" are default output column names of melt()
+    hrData['value'].astype(int)
+    hrData$Hour <- ordered(hrData$Hour, levels=hour_num)
+    s <- ggplot(data = hrData, aes(x=Hour,y=value, group=variable)) 
+    s+ geom_line(aes(color=variable),size=1) + geom_point(color="red",size=0.6)+
+      labs(title=paste0("PM2.5 - [時]   ",siteName,"測站"))+
+      scale_color_manual(values=colorSet1)+
+      theme(text=element_text(family="黑體-繁 中黑", size=14),axis.text.x = element_text(angle=60, hjust=1))
+    
+    ggsave(filename, path = creatPath("/ByHour"))
       
   }
 }
@@ -214,6 +232,7 @@ doTask2 <- function(dataIn,index){
 # verify
 #ptimeDate <- getRangeInDF(df=data_1,MM=1)
 #pHourData <- transport4hour(ptimeDate,index = 1)
+#testData <- pHourData
 
 
 doTask2(data_1,ID1)
