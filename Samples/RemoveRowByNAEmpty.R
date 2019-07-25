@@ -75,11 +75,11 @@ doActions <- function(index){
   
   filename <- paste0(siteName,".png") # set the output filename for ggplot
   # 1. Draw by day the whole year
-  ggplot(data = pm25data, aes(x=Date, y= meansValue)) + geom_line(color=plotColor) +
-    theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
-    labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"))
+  #ggplot(data = pm25data, aes(x=Date, y= meansValue)) + geom_line(color=plotColor) +
+  #  theme(text=element_text(family="黑體-繁 中黑", size=14)) +  
+  #  labs(title=paste0("PM2.5 - [日]   ",siteName,"測站"))
   
-  ggsave(filename, path = creatPath("/ByDate"))
+  #ggsave(filename, path = creatPath("/ByDate"))
   
   # 2.Draw by weekday
   # 星期平均 by Year
@@ -194,10 +194,33 @@ transport4hour <- function(dataIn,index){
   return(data1)
 }
 
+#########
+# Specical Dates list
+#########
+sdl_file <- "../project/Special_Date_List.csv"
+sdl_data<-read.csv(sdl_file, header=T, sep=",")
+
+SpecicalDateslistCheck <- function(df,index,month){
+  sdl<-sdl_data[sdl_data$ID == index,]
+  sdl1 <- sdl[sdl$Month == month,]
+  n<-nrow(sdl1)
+  if(n>0){   # find it
+    date1 <- sdl1$Date1
+    date2 <- sdl1$Date2
+    ptimeDate <- getRangeInDF(df,MM=month,dd1=date1,dd2=date2)
+  }else
+  {
+    ptimeDate <- getRangeInDF(df=df,MM=month)
+  }
+  return(ptimeDate)
+}
+
 plotMonthsByHours <- function(dataIn,index,mm){
   siteName <- sites[index]
   data <- dataIn
-  ptimeDate <- getRangeInDF(df=data,MM=mm)
+  
+  # check the [Specical Dates list] first
+  ptimeDate <- SpecicalDateslistCheck(df=data,index=index,month=mm)
   n <- nrow(ptimeDate)
   if(n<7){
     warning(paste0(siteName,' Month-',mm,': obtain the rows ',n, ' < 7'))
@@ -233,9 +256,18 @@ ouput_csv <- function(dataIn,index){
   data <- dataIn
   path <- creatPath("/Task",parentDir = "../project/Outputs")
   filename <- paste0(path,siteName,".csv")
-  write.csv(data_1,file=filename,row.names = FALSE)
+  write.csv(data,file=filename,row.names = FALSE)
 }
 
+output_all_csv <- function(){
+  ouput_csv(data_1,ID1)
+  ouput_csv(data_2,ID2)
+  ouput_csv(data_3,ID3)
+  ouput_csv(data_4,ID4)
+  ouput_csv(data_5,ID5)
+  ouput_csv(data_6,ID6)
+  ouput_csv(data_7,ID7)
+}
 
 doTask2(data_1,ID1)
 doTask2(data_2,ID2)
@@ -250,11 +282,5 @@ doTask2(data_7,ID7)
 #ptimeDate <- getRangeInDF(df=data_4,MM=3)
 #pHourData <- transport4hour(ptimeDate,index = 4)
 #testData <- pHourData
-ouput_csv(data_1,ID1)
-ouput_csv(data_2,ID2)
-ouput_csv(data_3,ID3)
-ouput_csv(data_4,ID4)
-ouput_csv(data_5,ID5)
-ouput_csv(data_6,ID6)
-ouput_csv(data_7,ID7)
 
+#output_all_csv
