@@ -26,10 +26,13 @@ ID4 <- 4   #古亭
 ID5 <- 5   #松山
 ID6 <- 6   #陽明
 ID7 <- 7   #萬華
-
-creatPath <- function(subDir){
-  dir.create(file.path(dir_pic, subDir), recursive = TRUE, showWarnings = FALSE)
-  ret <- paste0(dir_pic,subDir,"/")
+    
+creatPath <- function(subDir,parentDir=NULL){
+  if(is.null(parentDir)) {
+    parentDir <- dir_pic
+  }
+  dir.create(file.path(parentDir, subDir), recursive = TRUE, showWarnings = FALSE)
+  ret <- paste0(parentDir,subDir,"/")
   return (ret)
 }
 
@@ -179,10 +182,6 @@ getRangeInDF <- function(df,MM,dd1=NULL,dd2=NULL){
   return(ptimeDate)
 }
 
-flatByDate <- function(dataIn){
-  df["Date"] = dataIn.colindex.names[index]
-}
-
 transport4hour <- function(dataIn,index){
   data1 <- as.data.frame(t(dataIn[,1:27]))
   
@@ -229,10 +228,13 @@ doTask2 <- function(dataIn,index){
   }
 }
 
-# verify
-#ptimeDate <- getRangeInDF(df=data_2,MM=11)
-#pHourData <- transport4hour(ptimeDate,index = 2)
-#testData <- pHourData
+ouput_csv <- function(dataIn,index){
+  siteName <- sites[index]
+  data <- dataIn
+  path <- creatPath("/Task",parentDir = "../project/Outputs")
+  filename <- paste0(path,siteName,".csv")
+  write.csv(data_1,file=filename,row.names = FALSE)
+}
 
 
 doTask2(data_1,ID1)
@@ -243,7 +245,16 @@ doTask2(data_5,ID5)
 doTask2(data_6,ID6)
 doTask2(data_7,ID7)
 
-
-
-
+# verify
+#('士林','大同','中山','古亭','松山','陽明','萬華')
+#ptimeDate <- getRangeInDF(df=data_4,MM=3)
+#pHourData <- transport4hour(ptimeDate,index = 4)
+#testData <- pHourData
+ouput_csv(data_1,ID1)
+ouput_csv(data_2,ID2)
+ouput_csv(data_3,ID3)
+ouput_csv(data_4,ID4)
+ouput_csv(data_5,ID5)
+ouput_csv(data_6,ID6)
+ouput_csv(data_7,ID7)
 
