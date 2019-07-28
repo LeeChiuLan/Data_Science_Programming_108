@@ -9,6 +9,10 @@ Data Science Programming in Summer NTU
 <br>
 My Website: <a href="https://leechiulan.github.io" target="_blank">https://leechiulan.github.io</a><br>
 <br>
+  
+## Project
+  - [PM2.5 :cloud: in TW](https://hackmd.io/WYAU4-XKRV2QvRoREVlXTw)
+
 ## Link
 108 全國夏季學院學員 github ->[here](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)
 <br>PecuClub - Facebook ->[here](https://www.facebook.com/groups/283207588460616/)
@@ -19,10 +23,6 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 - week 2
   - [hw2](https://leechiulan.github.io/Data_Science_Programming_108/week2/part1/AirPollutionAQI.html): ggplot:[AirPollution]
   - [hw3](https://leechiulan.github.io/Data_Science_Programming_108/week2/part2/DataMiningRestaurants.html): jieba:[TextMining4Restaurants]
-  
-## Project
-  - [PM2.5 :cloud: in TW](https://hackmd.io/WYAU4-XKRV2QvRoREVlXTw)
-
   
 ## Week 1
 - Progress:
