@@ -64,6 +64,9 @@ My Website: <a href="https://leechiulan.github.io" target="_blank">https://leech
 - week 3
   - 投影片 [機器學習簡介](https://docs.google.com/presentation/d/e/2PACX-1vSzngDJuRE8e5nuP_f8muXnSXuKQPVqmVCT2y41lmqnBw6btgm1kC8OL9WH7FjbiFm4kIKkdWxu8as7/pub?start=false&loop=false&delayms=3000)
   - [108 全國夏季學院 (7/22) Class 5](https://www.peculab.org/2019/07/18/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-22-class-5/)
+- [【NTU CS+X】資料科學程式設計 - n2 Data Science Programming](https://n2-data-science-programming.gitbook.io/rsummer/)
+  - [R Shiny](https://n2-data-science-programming.gitbook.io/rsummer/week_5/shiny)
+
   
 ## Reference
 - [資料科學- text mining 文字雲 --以自由時報體育版新聞為例](http://to52016.pixnet.net/blog/post/342915697-%5Br%5D-資料科學--text-mining-文字雲---以自由時報體)
